@@ -1,0 +1,18 @@
+ACTION!="add",GOTO="check_remove"
+
+
+KERNEL=="sd[a-z][0-9]", SUBSYSTEM=="block",SUBSYSTEMS=="usb", RUN+="/bin/systemctl restart storage-partition-mount@%k.service"
+KERNEL=="mmcblk[1-9]p[0-9]", SUBSYSTEM=="block",SUBSYSTEMS=="mmc", RUN+="/bin/systemctl restart storage-partition-mount@%k.service"
+KERNEL=="nvme0n[0-9]p[0-9]", SUBSYSTEM=="block",SUBSYSTEMS=="nvme", RUN+="/bin/systemctl restart storage-partition-mount@%k.service"
+
+LABEL="check_remove"
+
+ACTION!="remove", GOTO="rules_end"
+
+KERNEL=="sd[a-z][0-9]", SUBSYSTEM=="block",SUBSYSTEMS=="usb", RUN+="/bin/systemctl stop storage-partition-mount@%k.service"
+#KERNEL=="mmcblk[0-9]", SUBSYSTEM=="block",SUBSYSTEMS=="mmc", RUN+="/etc/udev/rules.d/umount.sh %k"
+KERNEL=="mmcblk[1-9]p[0-9]", SUBSYSTEM=="block", RUN+="/bin/systemctl stop storage-partition-mount@%k.service"
+KERNEL=="nvme0n[0-9]p[0-9]", SUBSYSTEM=="block",SUBSYSTEMS=="nvme", RUN+="/bin/systemctl stop storage-partition-mount@%k.service"
+
+LABEL="rules_end"
+

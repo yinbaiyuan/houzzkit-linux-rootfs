@@ -1,0 +1,14 @@
+/.
+/etc
+/etc/iptables
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/iptables-persistent
+/usr/share/doc/iptables-persistent/copyright
+/usr/share/netfilter-persistent
+/usr/share/netfilter-persistent/plugins.d
+/usr/share/netfilter-persistent/plugins.d/15-ip4tables
+/usr/share/netfilter-persistent/plugins.d/25-ip6tables
+/usr/share/doc/iptables-persistent/README
+/usr/share/doc/iptables-persistent/changelog.gz

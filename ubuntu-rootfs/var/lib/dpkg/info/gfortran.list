@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/bin
+/usr/share
+/usr/share/doc
+/usr/share/man
+/usr/share/man/man1
+/usr/bin/aarch64-linux-gnu-gfortran
+/usr/bin/gfortran
+/usr/share/doc/gfortran
+/usr/share/man/man1/aarch64-linux-gnu-gfortran.1.gz
+/usr/share/man/man1/gfortran.1.gz

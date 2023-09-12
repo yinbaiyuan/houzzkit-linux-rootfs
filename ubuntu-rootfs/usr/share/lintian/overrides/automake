@@ -1,0 +1,2 @@
+automake: extra-license-file usr/share/automake-1.15/COPYING
+automake: package-contains-empty-directory usr/share/aclocal/

@@ -1,0 +1,9 @@
+[Unit]
+Description=Auto mount umount storage device on %i
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/etc/systemd/system/auto-device-mount.sh add %i
+ExecStop=/etc/systemd/system/auto-device-mount.sh remove %i
+

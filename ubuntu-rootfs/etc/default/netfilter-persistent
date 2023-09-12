@@ -1,0 +1,9 @@
+# Configuration for netfilter-persistent
+# Plugins may extend this file or have their own
+
+FLUSH_ON_STOP=0
+
+# Set to yes for not flushing existing ip[6]tables rules when netfilter-persistent
+# is called with the start parameter
+# IPTABLES_RESTORE_NOFLUSH=yes
+# IP6TABLES_RESTORE_NOFLUSH=yes

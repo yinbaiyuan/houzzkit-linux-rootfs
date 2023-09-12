@@ -1,0 +1,18 @@
+Package: python3.8-doc
+Description-md5: 2d2853a074626214d786d0741ee881b9
+Description-en: Documentation for the high-level object-oriented language Python (v3.8)
+ These is the official set of documentation for the interactive high-level
+ object-oriented language Python (v3.8). All documents are provided
+ in HTML format. The package consists of ten documents:
+ .
+ * What's New in Python3.8
+ * Tutorial
+ * Python Library Reference
+ * Macintosh Module Reference
+ * Python Language Reference
+ * Extending and Embedding Python
+ * Python/C API Reference
+ * Installing Python Modules
+ * Documenting Python
+ * Distributing Python Modules
+

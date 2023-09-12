@@ -1,0 +1,10 @@
+0769ea74bd1cd3d533bb05145b3aba07  usr/lib/aarch64-linux-gnu/libmali.so.1.9.0
+27df12e33a7c4e08152e9557813d3004  usr/lib/aarch64-linux-gnu/mali/libEGL.so.1
+5c409c068239ee9ac6431965a05f0c86  usr/lib/aarch64-linux-gnu/mali/libGLESv1_CM.so.1
+f564a4f0cdaf35b61af00e2308ebeefa  usr/lib/aarch64-linux-gnu/mali/libGLESv2.so.2
+25d9470b8297f323bcc4e326aeceb154  usr/lib/aarch64-linux-gnu/mali/libMali.so.1
+c58222a5904ea530ee0993be8a8062ad  usr/lib/aarch64-linux-gnu/mali/libMaliOpenCL.so.1
+3a6c3db61c594ceb561c30548f02118a  usr/lib/aarch64-linux-gnu/mali/libgbm.so.1
+a5af9ce9d897b885966be6a2f4498cf6  usr/lib/aarch64-linux-gnu/pkgconfig/mali.pc
+8faaf77a35dd8244631879d7dddc1890  usr/share/doc/libmali-bifrost-g52-g2p0-x11/changelog.Debian.gz
+bb25c715c677d867022280273f503b37  usr/share/doc/libmali-bifrost-g52-g2p0-x11/copyright

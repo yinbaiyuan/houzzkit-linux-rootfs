@@ -1,0 +1,18 @@
+# The format of this file is documented in the dhcpd.leases(5) manual page.
+# This lease file was written by isc-dhcp-4.3.5
+
+# authoring-byte-order entry is generated, DO NOT DELETE
+authoring-byte-order little-endian;
+
+lease 192.168.55.2 {
+  starts 1 2023/09/04 04:40:00;
+  ends 1 2023/09/04 05:40:00;
+  tstp 1 2023/09/04 05:40:00;
+  cltt 1 2023/09/04 04:40:00;
+  binding state free;
+  hardware ethernet 80:fa:5b:67:ba:23;
+  uid "\001\200\372[g\272#";
+  set vendor-class-identifier = "MSFT 5.0";
+}
+server-duid "\000\001\000\001,\210\033\000\302\366i\334\250l";
+

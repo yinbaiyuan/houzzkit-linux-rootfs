@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/bin
+/usr/bin/autopoint
+/usr/share
+/usr/share/doc
+/usr/share/doc/autopoint
+/usr/share/doc/autopoint/changelog.Debian.gz
+/usr/share/doc/autopoint/copyright
+/usr/share/gettext
+/usr/share/gettext/archive.dir.tar.xz
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/autopoint.1.gz

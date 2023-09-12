@@ -1,0 +1,26 @@
+logrotate state -- version 2
+"/var/log/syslog" 2021-9-29-6:25:2
+"/var/log/dpkg.log" 2021-9-29-6:25:2
+"/var/log/unattended-upgrades/unattended-upgrades.log" 2021-9-29-6:0:0
+"/var/log/unattended-upgrades/unattended-upgrades-shutdown.log" 2021-9-29-6:0:0
+"/var/log/auth.log" 2021-9-29-6:25:2
+"/var/log/apt/term.log" 2021-9-29-6:25:2
+"/var/log/ppp-connect-errors" 2021-9-29-6:0:0
+"/var/log/apport.log" 2021-9-29-6:0:0
+"/var/log/apt/history.log" 2021-9-29-6:25:2
+"/var/log/alternatives.log" 2021-9-29-6:25:2
+"/var/log/debug" 2021-9-29-6:0:0
+"/var/log/mail.log" 2021-9-29-6:0:0
+"/var/log/kern.log" 2021-9-29-6:25:2
+"/var/log/daemon.log" 2021-9-29-6:0:0
+"/var/log/wtmp" 2021-9-29-6:25:2
+"/var/log/mail.warn" 2021-9-29-6:0:0
+"/var/log/btmp" 2021-9-29-6:25:2
+"/var/log/lpr.log" 2021-9-29-6:0:0
+"/var/log/mail.err" 2021-9-29-6:0:0
+"/var/log/unattended-upgrades/unattended-upgrades-dpkg.log" 2021-9-29-6:0:0
+"/var/log/user.log" 2021-9-29-6:0:0
+"/var/log/mail.info" 2021-9-29-6:0:0
+"/var/log/slim.log" 2021-9-29-6:25:2
+"/var/log/cron.log" 2021-9-29-6:0:0
+"/var/log/messages" 2021-9-29-6:0:0

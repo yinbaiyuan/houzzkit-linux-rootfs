@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = purge ]
+then
+	rm -f /etc/minicom.users* /etc/minicom/minirc.*
+	if ! rmdir /etc/minicom 2> /dev/null
+	then
+		echo "Cannot remove /etc/minicom, please do it manually."
+	fi
+fi
+
+exit 0

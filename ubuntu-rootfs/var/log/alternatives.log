@@ -1,0 +1,31 @@
+update-alternatives 2023-08-30 18:36:15: run with --remove gnome-www-browser /usr/bin/firefox
+update-alternatives 2023-08-30 18:36:15: link group gnome-www-browser fully removed
+update-alternatives 2023-08-30 18:36:15: run with --remove x-www-browser /usr/bin/firefox
+update-alternatives 2023-08-30 18:36:15: link group x-www-browser fully removed
+update-alternatives 2023-08-31 15:21:21: run with --install /bin/nc nc /bin/nc.traditional 10 --slave /bin/netcat netcat /bin/nc.traditional --slave /usr/share/man/man1/nc.1.gz nc.1.gz /usr/share/man/man1/nc.traditional.1.gz --slave /usr/share/man/man1/netcat.1.gz netcat.1.gz /usr/share/man/man1/nc.traditional.1.gz
+update-alternatives 2023-08-31 15:21:21: link group nc updated to point to /bin/nc.traditional
+update-alternatives 2023-09-02 20:21:19: run with --remove x-session-manager /usr/bin/startlxde
+update-alternatives 2023-09-02 20:21:19: link group x-session-manager updated to point to /usr/bin/gnome-session
+update-alternatives 2023-09-02 20:21:19: run with --remove x-session-manager /usr/bin/lxsession
+update-alternatives 2023-09-02 20:21:44: run with --remove gnome-text-editor /usr/bin/leafpad
+update-alternatives 2023-09-02 20:21:44: link group gnome-text-editor fully removed
+update-alternatives 2023-09-02 20:25:45: run with --remove x-window-manager /usr/bin/mutter
+update-alternatives 2023-09-02 20:25:50: run with --remove x-session-manager /usr/bin/gnome-session
+update-alternatives 2023-09-02 20:25:50: link group x-session-manager updated to point to /usr/bin/openbox-session
+update-alternatives 2023-09-02 20:25:50: run with --remove gdm3.css /usr/share/gnome-shell/theme/ubuntu.css
+update-alternatives 2023-09-02 20:25:50: link group gdm3.css fully removed
+update-alternatives 2023-09-02 20:25:53: run with --remove x-window-manager /usr/bin/openbox
+update-alternatives 2023-09-02 20:25:53: link group x-window-manager fully removed
+update-alternatives 2023-09-02 20:25:53: run with --remove x-session-manager /usr/bin/openbox-session
+update-alternatives 2023-09-02 20:25:53: link group x-session-manager fully removed
+update-alternatives 2023-09-02 20:30:52: run with --remove x-terminal-emulator /usr/bin/lxterminal
+update-alternatives 2023-09-02 20:30:52: link group x-terminal-emulator updated to point to /usr/bin/lxterm
+update-alternatives 2023-09-02 20:35:08: run with --remove x-terminal-emulator /usr/bin/koi8rxterm
+update-alternatives 2023-09-02 20:35:08: run with --remove x-terminal-emulator /usr/bin/uxterm
+update-alternatives 2023-09-02 20:35:08: run with --remove x-terminal-emulator /usr/bin/xterm
+update-alternatives 2023-09-02 20:35:08: run with --remove x-terminal-emulator /usr/bin/lxterm
+update-alternatives 2023-09-02 20:35:08: link group x-terminal-emulator fully removed
+update-alternatives 2023-09-02 20:35:43: run with --remove start-here.svg /usr/share/icons/gnome/scalable/places/debian-swirl.svg
+update-alternatives 2023-09-02 20:35:43: link group start-here.svg updated to point to /usr/share/icons/gnome/scalable/places/gnome-foot.svg
+update-alternatives 2023-09-02 20:35:43: run with --remove start-here.svg /usr/share/icons/gnome/scalable/places/gnome-foot.svg
+update-alternatives 2023-09-02 20:35:43: link group start-here.svg fully removed

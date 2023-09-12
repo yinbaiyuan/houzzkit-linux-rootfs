@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" != "upgrade" ]
+then
+    update-alternatives --remove liblapack.so-aarch64-linux-gnu \
+                        /usr/lib/aarch64-linux-gnu/lapack/liblapack.so
+fi
+
+
+
+exit 0

@@ -1,0 +1,15 @@
+/.
+/etc
+/etc/udhcpc
+/etc/udhcpc/default.script
+/sbin
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/udhcpc
+/usr/share/doc/udhcpc/copyright
+/usr/share/man
+/usr/share/man/man8
+/sbin/udhcpc
+/usr/share/doc/udhcpc/changelog.Debian.gz
+/usr/share/man/man8/udhcpc.8.gz

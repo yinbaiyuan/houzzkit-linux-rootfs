@@ -1,0 +1,17 @@
+83d50ff6a874b22e8bbeeb8c3c805736  usr/lib/aarch64-linux-gnu/libgstadaptivedemux-1.0.so.0.1405.0
+ac4db5dd26a6e7b7eadf6b061d3cb19e  usr/lib/aarch64-linux-gnu/libgstbadaudio-1.0.so.0.1405.0
+323a40ea5a5eed94956eda6a697b974d  usr/lib/aarch64-linux-gnu/libgstbadvideo-1.0.so.0.1405.0
+2e0e5a156f6b396ed7c582ff842b6f22  usr/lib/aarch64-linux-gnu/libgstcodecparsers-1.0.so.0.1405.0
+d0410e247f75ec03ed9d8c5e8d864e98  usr/lib/aarch64-linux-gnu/libgstinsertbin-1.0.so.0.1405.0
+383ab9b31717351be71125ba1906bb4f  usr/lib/aarch64-linux-gnu/libgstisoff-1.0.so.0.1405.0
+d84cc50b41eb610795e3089d14a4d94e  usr/lib/aarch64-linux-gnu/libgstmpegts-1.0.so.0.1405.0
+e4fb8eeb5931d89b2aa6591d967e0842  usr/lib/aarch64-linux-gnu/libgstplayer-1.0.so.0.1405.0
+6addab7d6366fdb3bc4e03fb2bca4bda  usr/lib/aarch64-linux-gnu/libgsturidownloader-1.0.so.0.1405.0
+178bd5c87c8328f0fa9cb9ed152a92b6  usr/lib/aarch64-linux-gnu/libgstwayland-1.0.so.0.1405.0
+66e05c81a4184936a8065a397753001a  usr/lib/aarch64-linux-gnu/libgstwebrtc-1.0.so.0.1405.0
+522445a5bc87310646c5e95de9a8ad45  usr/share/doc/libgstreamer-plugins-bad1.0-0/AUTHORS
+e039d5c401789e36ab7d595b21c31308  usr/share/doc/libgstreamer-plugins-bad1.0-0/NEWS.gz
+305a1bbde50dee0513968459b1d35325  usr/share/doc/libgstreamer-plugins-bad1.0-0/README.Debian
+8534f7b15eaf49e10b1afb95e6f6c023  usr/share/doc/libgstreamer-plugins-bad1.0-0/README.gz
+07304776e24cec9d3457d904bb95b1db  usr/share/doc/libgstreamer-plugins-bad1.0-0/changelog.Debian.gz
+5d80a0c9ddc083712c157b183fc237ed  usr/share/doc/libgstreamer-plugins-bad1.0-0/copyright

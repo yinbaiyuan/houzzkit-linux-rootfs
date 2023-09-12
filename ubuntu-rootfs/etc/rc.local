@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#config your app autorun there when sytem boot
+
+#4G-demon &

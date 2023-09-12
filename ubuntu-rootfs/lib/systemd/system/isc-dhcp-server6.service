@@ -1,0 +1,25 @@
+[Unit]
+Description=ISC DHCP IPv6 server
+Documentation=man:dhcpd(8)
+Wants=network-online.target
+After=network-online.target
+After=time-sync.target
+ConditionPathExists=/etc/default/isc-dhcp-server
+ConditionPathExists=|/etc/ltsp/dhcpd6.conf
+ConditionPathExists=|/etc/dhcp/dhcpd6.conf
+
+[Service]
+EnvironmentFile=/etc/default/isc-dhcp-server
+RuntimeDirectory=dhcp-server
+# The leases files need to be root:dhcpd even when dropping privileges
+ExecStart=/bin/sh -ec '\
+    CONFIG_FILE=/etc/dhcp/dhcpd6.conf; \
+    if [ -f /etc/ltsp/dhcpd6.conf ]; then CONFIG_FILE=/etc/ltsp/dhcpd6.conf; fi; \
+    [ -e /var/lib/dhcp/dhcpd6.leases ] || touch /var/lib/dhcp/dhcpd6.leases; \
+    chown root:dhcpd /var/lib/dhcp /var/lib/dhcp/dhcpd6.leases; \
+    chmod 775 /var/lib/dhcp ; chmod 664 /var/lib/dhcp/dhcpd6.leases; \
+    if test -n "$INTERFACES" -a -z "$INTERFACESv6"; then INTERFACESv6="$INTERFACES"; fi; \
+    exec dhcpd -user dhcpd -group dhcpd -f -6 -pf /run/dhcp-server/dhcpd6.pid -cf $CONFIG_FILE $INTERFACESv6'
+
+[Install]
+WantedBy=multi-user.target

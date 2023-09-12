@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/gcc
+/usr/lib/gcc/aarch64-linux-gnu
+/usr/lib/gcc/aarch64-linux-gnu/7
+/usr/lib/gcc/aarch64-linux-gnu/7/libcaf_single.a
+/usr/lib/gcc/aarch64-linux-gnu/7/libgfortran.a
+/usr/share
+/usr/share/doc
+/usr/lib/gcc/aarch64-linux-gnu/7/libgfortran.so
+/usr/share/doc/libgfortran-7-dev

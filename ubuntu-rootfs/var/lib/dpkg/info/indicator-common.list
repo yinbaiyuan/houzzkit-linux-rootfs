@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/systemd
+/usr/lib/systemd/user
+/usr/lib/systemd/user/indicators-pre.target
+/usr/share
+/usr/share/doc
+/usr/share/doc/indicator-common
+/usr/share/doc/indicator-common/changelog.Debian.gz
+/usr/share/doc/indicator-common/copyright

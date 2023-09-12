@@ -1,0 +1,17 @@
+#!/bin/sh
+
+set -e
+
+if [ "serial" != "serial" ]; then
+  update-alternatives \
+	--install /usr/bin/h5pcc h5pcc /usr/bin/h5pcc.serial 50 \
+	--slave /usr/bin/h5pfc h5pfc /usr/bin/h5pfc.serial \
+	--slave /usr/share/man/man1/h5pcc.1.gz h5pcc.1.gz /usr/share/man/man1/h5pcc.serial.1.gz \
+	--slave /usr/share/man/man1/h5pfc.1.gz h5pfc.1.gz /usr/share/man/man1/h5pfc.serial.1.gz
+fi
+update-alternatives \
+	--install /usr/lib/aarch64-linux-gnu/pkgconfig/hdf5.pc hdf5.pc /usr/lib/aarch64-linux-gnu/pkgconfig/hdf5-serial.pc 50 \
+
+
+
+exit 0

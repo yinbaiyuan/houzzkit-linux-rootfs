@@ -1,0 +1,234 @@
+#!/bin/bash
+
+# 帮助信息
+function showhelp()
+{
+	echo -e "
+	ff_export_rootfs </path/to/store> [-t <ext4|btrfs>]
+	"
+	exit -1
+}
+
+# 为拷贝rootfs做准备
+function prepare_rootfs()
+{
+	# 配置下次开机运行resize服务，用于释放存储空间
+	# systemctl enable命令的作用：下次开机执行指定服务
+	systemctl enable resize-helper.service > /dev/null 2>&1
+	
+	# 清理缓存包
+	apt-get clean -y
+}
+
+# 删除系统临时文件（拷贝后的文件）
+function clead_target_rootfs()
+{
+	ROOT_DIR=$1
+	rm -rf ${ROOT_DIR}/usr/share/doc/*
+	rm -rf ${ROOT_DIR}/var/lib/apt/lists/*
+	rm -rf ${ROOT_DIR}/tmp/*
+	find ${ROOT_DIR}/usr/share/man/ -name "*.gz" -exec rm {} \;
+	find ${ROOT_DIR}/var/log/ -type f -exec rm {} \;
+}
+
+# 卸载镜像文件
+function umount_img() {
+	# mountpoint命令的作用：判断当前文件是否挂载点
+	if mountpoint -q $TEMP_MOUNT_POINT; then
+		umount $TEMP_MOUNT_POINT
+	fi
+	rm -rf $TEMP_MOUNT_POINT
+}
+
+function finish() {
+	umount_img
+	exit -1
+}
+
+# 判断当前执行是否ROOT用户，若不是则退出
+[[ $UID -ne 0 ]] && echo -e "\033[31m should run as root \033[0m" && showhelp
+# $UID的作用：获取用户ID
+# ROOT用户ID一定为0
+
+# 检查是否存在rsync命令
+[[ -n "$(which rsync)" ]] || { echo -e " rsync not found\n\033[31m apt install rsync \033[0m"; exit -1; }
+
+# 判断传参个数是否大于1个
+[[ $# -lt 1 ]] && showhelp;
+
+# 判断是否带有-u参数
+[[ "$1" == "-u" ]] && { PORT_UPPER="1"; shift; }
+
+# 镜像存储路径
+DEST_PATH=$1
+# 没用
+MEDIA_DEVICE=
+# 镜像文件系统格式
+STORE_FS_TYPE=
+
+# 判断传参路径是否存在
+[[ -d $DEST_PATH ]] || { echo -e "\033[31m store path not exist \033[0m"; exit -1; }
+
+# 判断是否带有-t参数，用于指定文件系统格式
+if [[ $# -eq 3 ]] && [[ $2 == "-t" ]]; then
+	case $3 in
+		ext4|btrfs)
+			STORE_FS_TYPE=$3
+			;;
+		*)
+			showhelp
+			;;
+	esac
+fi
+
+PORT_OVERLAYROOT=false
+
+# 获取文件系统类型，主要分为overlayroot、/dev/root、其他
+ROOTFS_DEVICE=`findmnt -n -o SOURCE --target /`
+# findmnt命令的作用：列出系统已挂载的文件系统
+
+# 文件系统类型为overlayroot处理流程
+if [[ "${ROOTFS_DEVICE}" == "overlayroot" ]]; then
+# overlayroot是影子文件系统，真正文件系统为只读，运行文件系统在内存中
+	PORT_OVERLAYROOT=true
+	OVERLAY_MOUNT=$(mount | sed -n '/^overlayroot/p')
+	UPPER_MOUNTPOINT=$(echo ${OVERLAY_MOUNT} | grep -Eo "upperdir.*" | cut -f 1 -d , | cut -f 2 -d =)
+	LOWER_MOUNTPOINT=$(echo ${OVERLAY_MOUNT} | grep -Eo "lowerdir.*" | cut -f 1 -d , | cut -f 2 -d =)
+	
+	LOWER_DEVICE=$(findmnt -n -o SOURCE --target ${LOWER_MOUNTPOINT})
+	UPPER_DEVICE=$(findmnt -n -o SOURCE --target ${UPPER_MOUNTPOINT})
+	
+	if [[ "${PORT_UPPER}" == "1" ]]; then
+		PORT_OVERLAYROOT=false
+		ROOTFS_DEVICE=${UPPER_DEVICE}
+		ROOTFS_MOUNTPOINT=${UPPER_MOUNTPOINT}/
+	
+		ROOTFS_TYPE=$(blkid -o value -s TYPE ${ROOTFS_DEVICE})
+		ROOTFS_PARTLABEL=$(lsblk -n -o PARTLABEL ${ROOTFS_DEVICE})
+		[[ -n "${ROOTFS_PARTLABEL}" ]] || ROOTFS_PARTLABEL="userdata"
+	else
+		ROOTFS_MOUNTPOINT="/"
+	
+		ROOTFS_TYPE=$(blkid -o value -s TYPE ${LOWER_DEVICE})
+		ROOTFS_PARTLABEL=$(lsblk -n -o PARTLABEL ${LOWER_DEVICE})
+		[[ -n "${ROOTFS_PARTLABEL}" ]] || ROOTFS_PARTLABEL="rootfs"
+	fi
+# 文件系统类型为/dev/root处理流程
+else
+	if [[ "${ROOTFS_DEVICE}" == "/dev/root" ]]; then
+
+		MAJOR_ROOTFS=$(mountpoint -d / | cut -f 1 -d ":")
+		MINOR_ROOTFS=$(mountpoint -d / | cut -f 2 -d ":")
+		DEV_ROOTFS=$(cat /proc/partitions | awk {'if ($1 == "'${MAJOR_ROOTFS}'" && $2 == "'${MINOR_ROOTFS}'") print $4 '})
+		ROOTFS_DEVICE=/dev/${DEV_ROOTFS}
+	fi
+
+# 其他文件系统类型处理流程（RK3568运行的是此流程，/dev/mmcblk0p6）
+	PORT_OVERLAYROOT=false
+	ROOTFS_MOUNTPOINT="/"
+	
+	# 获取文件系统格式，ext4
+	ROOTFS_TYPE=$(blkid -o value -s TYPE ${ROOTFS_DEVICE})
+	
+	# 获取文件系统类型，rootfs
+	ROOTFS_PARTLABEL=$(lsblk -n -o PARTLABEL ${ROOTFS_DEVICE})
+	[[ -n "${ROOTFS_PARTLABEL}" ]] || ROOTFS_PARTLABEL="rootfs"
+fi
+
+# 判断镜像存储路径是否可用
+#MEDIA_DEVICE=`findmnt -n -o SOURCE --target $DEST_PATH`
+MEDIA_FS_TYPE=`df $DEST_PATH --output=fstype | awk 'NR==2 {print $1}'`
+MEDIA_FREE_SPACE=`df $DEST_PATH -m --output=avail | awk 'NR==2 {print $1}'`
+
+# 准备拷贝镜像
+#[[ $MEDIA_DEVICE != $ROOTFS_DEVICE ]] || { echo -e "\033[31m can not store in local device \033[0m"; exit -1; }
+#[[ $MEDIA_FS_TYPE != "vfat" ]] || { echo -e "\033[31m store media fs type cannot be FAT \033[0m"; exit -1; }
+prepare_rootfs
+
+# 判断文件系统空间大小
+if [[ $ROOTFS_TYPE == "btrfs" ]]; then
+	ROOTFS_SIZE=`btrfs filesystem usage -m / | grep "Device allocated" | awk '{print $3}'`
+else
+	if [[ "${PORT_OVERLAYROOT}" == "true" ]]; then
+			LOWER_SIZE=$(du -s -k "${LOWER_MOUNTPOINT}" |sed -r -e 's/[[:space:]]+.*$//')
+			UPPER_SIZE=$(du -s -k "${UPPER_MOUNTPOINT}" |sed -r -e 's/[[:space:]]+.*$//')
+			ROOTFS_SIZE=$((LOWER_SIZE+UPPER_SIZE))
+	else
+			ROOTFS_SIZE=`df ${ROOTFS_MOUNTPOINT} -k --output=used | awk 'NR==2 {print $1}'`
+	fi
+fi
+
+# 镜像空间大小计算
+IMAGE_SIZE=$((ROOTFS_SIZE>>10))
+IMAGE_SIZE=$((IMAGE_SIZE+IMAGE_SIZE/10+300))
+echo -e "MEDIA FREE SPACE SIZE \t $MEDIA_FREE_SPACE \t MBytes"
+echo -e "EXPORT IMAGE SIZE \t $IMAGE_SIZE \t MBytes"
+
+# 判断存储设备是否有足够空间放置镜像
+if [[ $MEDIA_FREE_SPACE -lt $IMAGE_SIZE ]]; then
+    echo -e "\033[31m No enough free space on $MOUNT_POINT \033[0m"
+	exit -1
+fi
+
+[[ $STORE_FS_TYPE != "" ]] || STORE_FS_TYPE=$ROOTFS_TYPE
+
+
+# 组织镜像文件名，并创建镜像文件
+CURDATE=`date "+%Y%m%d%H%M"`
+OS_D=`lsb_release -d -s`
+IMAGE_FILE=$DEST_PATH/${OS_D// /_}_${STORE_FS_TYPE}_$CURDATE.img
+TEMP_MOUNT_POINT=`mktemp -d -p $DEST_PATH`
+# mktemp命令的作用：创建临时文件
+
+
+set -e
+trap finish ERR INT
+
+
+# 格式化镜像文件
+if [[ $STORE_FS_TYPE == "btrfs" ]]; then
+	truncate -s ${IMAGE_SIZE}M $IMAGE_FILE
+    mkfs.btrfs -fq -L $ROOTFS_PARTLABEL $IMAGE_FILE
+    mount -t btrfs -o noatime,compress=lzo $IMAGE_FILE $TEMP_MOUNT_POINT
+    btrfs subvolume create $TEMP_MOUNT_POINT/root
+	umount $TEMP_MOUNT_POINT
+    mount -t btrfs -o noatime,compress=lzo,subvol=root $IMAGE_FILE $TEMP_MOUNT_POINT
+else
+	INODE_COUNT=$(find "${ROOTFS_MOUNTPOINT}" | wc -l)
+	INODE_COUNT=$((INODE_COUNT+512))
+	BLOCK_COUNT=$((2000+(ROOTFS_SIZE+INODE_COUNT/4)*12/10))
+	echo BLOCK_COUNT $BLOCK_COUNT
+	echo INODE_COUNT $INODE_COUNT
+
+	mkfs.ext4 -Fq -L $ROOTFS_PARTLABEL -b 1024 -I 128 -N $INODE_COUNT $IMAGE_FILE $BLOCK_COUNT
+	mount $IMAGE_FILE $TEMP_MOUNT_POINT
+fi
+
+# 开始拷贝
+echo "sync..."
+rsync -aqx --delete --exclude={"$IMAGE_FILE","$TEMP_MOUNT_POINT"} ${ROOTFS_MOUNTPOINT} ${TEMP_MOUNT_POINT}
+echo "sync finish"
+
+set +e
+trap - ERR
+
+# 拷贝完成，清除临时文件
+clead_target_rootfs ${TEMP_MOUNT_POINT}
+
+# 
+while IFS= read -r LINE
+do
+	[ "${LINE}" == "/" ] && continue
+	E_FILE="${TEMP_MOUNT_POINT}/${LINE}"
+	[[ -e "${E_FILE}" ]] && rm -rf "${E_FILE}"
+done < <(findmnt -n -lo TARGET -t ext4,ext3,ext2,vat)
+
+# 卸载镜像文件
+umount_img
+
+# 优化镜像文件大小
+if [[ "${STORE_FS_TYPE}" == "ext4" ]]; then
+	e2fsck -fy ${IMAGE_FILE} 2>&1 > /dev/null
+    tune2fs -C 1 -c 0 -i 0 -e "remount-ro" ${IMAGE_FILE} 2>&1 > /dev/null
+fi
+echo -e "\033[31m Export rootfs to $IMAGE_FILE Success \033[0m"

@@ -1,0 +1,56 @@
+Origin: ROS
+Label: ROS bionic
+Suite: bionic
+Codename: bionic
+Date: Tue, 27 Jun 2023 13:24:16 UTC
+Architectures: i386 amd64 arm64 armhf
+Components: main
+Description: ROS bionic Debian Repository
+MD5Sum:
+ fb9b80e6cc5f50954ba2acbf715ff867 96273 main/binary-i386/Packages
+ 1aa65e8ac859bc238869fa8dc2a70e72 28546 main/binary-i386/Packages.gz
+ 7a5ee186c541db7a81c88aad6af4fac8 123 main/binary-i386/Release
+ afaa92472d3c7dd6b9ff1f874b2b2043 3132618 main/binary-amd64/Packages
+ 818125dff8d13bb096dac35804b6bee3 809066 main/binary-amd64/Packages.gz
+ 02113b6a71b800129c1373468e62f8f9 124 main/binary-amd64/Release
+ 8adc5bc041ff43533a9fd4b3bc7cae3c 3070410 main/binary-arm64/Packages
+ f194b5c6610ed4c5e4fac57916cc27fa 792704 main/binary-arm64/Packages.gz
+ ce3f198725ed1a832aff16b932412f2b 124 main/binary-arm64/Release
+ 7d99f3ad1597fbc45a6109fe11864236 2985476 main/binary-armhf/Packages
+ 43c7867fba1cc2e000d79672c6da0370 768540 main/binary-armhf/Packages.gz
+ aeea690f2d5488f693aac0c0763d96d5 124 main/binary-armhf/Release
+ 31aa832589ce5cf57cce673cad48e265 3979549 main/source/Sources
+ f2f031e9f4d3a11f8136a67723cde1d3 966568 main/source/Sources.gz
+ 15180888919c8068bf921469c3413511 125 main/source/Release
+SHA1:
+ 8a2154c4893843be86fd88e203b600938d88aae4 96273 main/binary-i386/Packages
+ 7cceea2a13144350b4b7ab2c49aff79377657b3a 28546 main/binary-i386/Packages.gz
+ 63a36ba041fe8d2f6476c745049581f0773bfcbd 123 main/binary-i386/Release
+ e0463b62a46cdb40905cfebfe4bce3225d031ef9 3132618 main/binary-amd64/Packages
+ 96220f42ad435c624d8d1243c7e37ba7090db6a8 809066 main/binary-amd64/Packages.gz
+ 2764d70e35b88f687565c3cce8d80462b35ca960 124 main/binary-amd64/Release
+ 529d7ae0a9d9f8bff4210d99840f180518a6f99e 3070410 main/binary-arm64/Packages
+ 852d35a74709747dab861f6c8757a00e6a6f01e5 792704 main/binary-arm64/Packages.gz
+ bc62c2abd73d0003682263a77fab03ecc171e949 124 main/binary-arm64/Release
+ 8bc67a5bd189c494f69e626178b7ab998c733665 2985476 main/binary-armhf/Packages
+ ea37b1bb320a1dae0b7ba46c24953adef3daf770 768540 main/binary-armhf/Packages.gz
+ 983569f76f57bdcc4262228959b6035e916677f8 124 main/binary-armhf/Release
+ 68d9268a662ffcde8b6eed9a4014ae59b9c8f550 3979549 main/source/Sources
+ 4facfa5c4b1f1e138b1954590ac7160c4715b2c9 966568 main/source/Sources.gz
+ da5921682e23d696ae6fb9ec4c06928037ca9e87 125 main/source/Release
+SHA256:
+ 352ba7c6b787ec22f193989e999e5fdd8a961ac4761ab288e285729a31be02ec 96273 main/binary-i386/Packages
+ 4bae32832877e09bc55c109506daafa7df9423efc8d51c0987f4ca6b9484d335 28546 main/binary-i386/Packages.gz
+ 08e462ceb23f8c15e29a02e94ab637052e64127f470d47314b68a2885e459918 123 main/binary-i386/Release
+ 58ae392854cb0fcffa1e37580193582148a03957506482ec76afea9e68f792c0 3132618 main/binary-amd64/Packages
+ 7bc980b8928a3aca5f5065bc386b8d0ff28acc43323c25296b2aec32575934a5 809066 main/binary-amd64/Packages.gz
+ 546f2fcef77bf0d39bb58c006cfb06644e2e5d5005f7a3f59a40bfd8134d6026 124 main/binary-amd64/Release
+ ff717f01870496d2607e1c0656d479732afed98a421bdc3df36a3f6fc258d221 3070410 main/binary-arm64/Packages
+ 0cec726fd9ed4821a90b67860465cf409689161c372e4f2fed2847bef5ccb906 792704 main/binary-arm64/Packages.gz
+ b4f037187bbef64e0352a577e52c7d95537bdb7b7c27147ee8af28b7ac81fc9b 124 main/binary-arm64/Release
+ 62753660a886965ef0f8a608be7e15f67e557c4921bc1cba6d6d80efc326ae48 2985476 main/binary-armhf/Packages
+ 4c34fd9653eb1852528bdc1d191f7f0a7239e707ffeb61218b32b02f91c9d20b 768540 main/binary-armhf/Packages.gz
+ 59199df1e7c2f9b50f979372a15b505423a5204008964d0b5375078e0cff7b35 124 main/binary-armhf/Release
+ 4be7d7a66a446bd9b367b3844ef91e9230766e941a2fe926b246b80dd016dd78 3979549 main/source/Sources
+ 5d470ebfe4f77189aa99dbb78216f23d4f3f39a4fffbcf37133d060c13c721d8 966568 main/source/Sources.gz
+ 32afab9a435607fb24e77ef07fdeb6bdd2b1d19698aac9c79148fc56ad37682c 125 main/source/Release

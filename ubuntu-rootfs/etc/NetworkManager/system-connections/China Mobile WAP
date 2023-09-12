@@ -1,0 +1,21 @@
+[connection]
+id=China Mobile WAP
+uuid=e11c2849-a32a-4342-9243-19c2549986fc
+type=gsm
+autoconnect=false
+permissions=user:rpdzkj:;
+
+[gsm]
+apn=cmwap
+number=*99#
+password-flags=1
+username=guest
+
+[ipv4]
+dns-search=
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+dns-search=
+method=auto

@@ -1,0 +1,47 @@
+#!/bin/sh
+
+set -e
+
+# Source debconf library
+. /usr/share/debconf/confmodule
+
+case "$1" in
+configure)
+    db_get iptables-persistent/autosave_done || true
+    if [ "x$RET" != "xtrue" ]; then
+        db_get iptables-persistent/autosave_v4 || true
+        if [ "x$RET" = "xtrue" ]; then
+	    if which iptables > /dev/null ; then
+		if iptables -t filter -L -n > /dev/null; then
+		    iptables-save > /etc/iptables/rules.v4
+		else
+                    echo "IPv4: Unable to save (table filter isn't available or module not loadable)"
+		fi
+	    else
+                echo "IPv4: Can't find iptables in $PATH, please check your system"
+            fi
+        fi
+        db_get iptables-persistent/autosave_v6 || true
+        if [ "x$RET" = "xtrue" ]; then
+	    if which ip6tables > /dev/null ; then
+		if ip6tables -t filter -L -n > /dev/null; then
+		    ip6tables-save > /etc/iptables/rules.v6
+		else
+                    echo "IPv6: Unable to save (table filter isn't available or module not loadable)"
+		fi
+	    else
+                echo "IPv6: Can't find ip6tables in $PATH, please check your system"
+            fi
+        fi
+
+        db_set iptables-persistent/autosave_done true || true
+    fi
+
+    update-rc.d iptables-persistent remove
+;;
+esac
+
+# Automatically added by dh_installdeb/11.1.6ubuntu2
+dpkg-maintscript-helper rm_conffile /etc/init.d/iptables-persistent 1~ -- "$@"
+# End automatically added section
+

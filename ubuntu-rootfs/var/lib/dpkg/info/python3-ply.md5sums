@@ -1,0 +1,15 @@
+86e0bf1fc9047cb63ffdc95e999a1be6  usr/bin/dh_python3-ply
+89a0fa009ab1e162124caaa48145c700  usr/lib/python3/dist-packages/ply-3.11.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/ply-3.11.egg-info/dependency_links.txt
+5e5859c72f4c1142181a8cc267aab1a0  usr/lib/python3/dist-packages/ply-3.11.egg-info/top_level.txt
+35b9be2f2de17428ce6f113d1297a6d6  usr/lib/python3/dist-packages/ply/__init__.py
+ae3477d6111caf8a8b3a1520e871257b  usr/lib/python3/dist-packages/ply/cpp.py
+d611ef154935cf306583d934b346c1c8  usr/lib/python3/dist-packages/ply/ctokens.py
+1bd6d3f8552f425da2b8a842efb6b018  usr/lib/python3/dist-packages/ply/lex.py
+aa82a8f7af382d8e2104ae4bdc9d7a8e  usr/lib/python3/dist-packages/ply/yacc.py
+2d43915610ec1eed8927ebd958ed008b  usr/lib/python3/dist-packages/ply/ygen.py
+9e496014ea0ac9f85da4377e045ceda5  usr/share/doc/python3-ply/README.Debian
+10d3c85c615417356aad2af4f97a7a5a  usr/share/doc/python3-ply/TODO
+6dcc7593865894db53b0224f12e1e074  usr/share/doc/python3-ply/changelog.Debian.gz
+c31a6c5bab66509657bd85e49a520a0e  usr/share/doc/python3-ply/copyright
+2eb0a42e4e97b8d4ab9cf451ae5d4e6d  usr/share/man/man1/dh_python3-ply.1.gz

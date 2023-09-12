@@ -1,0 +1,2 @@
+# the whole libltdl source is included, including the COPYING.LIB
+libltdl-dev binary: extra-license-file

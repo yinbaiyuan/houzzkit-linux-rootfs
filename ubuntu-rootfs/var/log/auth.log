@@ -1,0 +1,451 @@
+Aug 30 18:10:16 localhost systemd-logind[279]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Aug 30 18:10:19 localhost sshd[334]: Server listening on 0.0.0.0 port 22.
+Aug 30 18:10:19 localhost sshd[334]: Server listening on :: port 22.
+Aug 30 18:10:22 localhost sshd[334]: Received SIGHUP; restarting.
+Aug 30 18:10:22 localhost sshd[334]: Server listening on 0.0.0.0 port 22.
+Aug 30 18:10:22 localhost sshd[334]: Server listening on :: port 22.
+Aug 30 18:10:22 localhost sshd[334]: Received SIGHUP; restarting.
+Aug 30 18:10:22 localhost sshd[334]: Server listening on 0.0.0.0 port 22.
+Aug 30 18:10:22 localhost sshd[334]: Server listening on :: port 22.
+Aug 30 18:10:24 localhost login[327]: pam_securetty(login:auth): access denied: tty '/dev/ttyFIQ0' is not secure !
+Aug 30 18:10:27 localhost login[327]: FAILED LOGIN (1) on '/dev/ttyFIQ0' FOR 'root', Authentication failure
+Aug 30 18:10:31 localhost login[327]: pam_securetty(login:auth): access denied: tty '/dev/ttyFIQ0' is not secure !
+Aug 30 18:10:34 localhost login[327]: FAILED LOGIN (2) on '/dev/ttyFIQ0' FOR 'root', Authentication failure
+Aug 30 18:10:45 localhost sshd[429]: Accepted password for root from 192.168.13.142 port 59635 ssh2
+Aug 30 18:10:45 localhost sshd[429]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 30 18:10:45 localhost systemd-logind[279]: New session 1 of user root.
+Aug 30 18:10:45 localhost systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Aug 30 18:17:01 localhost CRON[472]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 30 18:17:01 localhost CRON[472]: pam_unix(cron:session): session closed for user root
+Aug 30 18:22:24 localhost systemd-logind[271]: New seat seat0.
+Aug 30 18:22:24 localhost systemd-logind[271]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Aug 30 18:22:27 localhost sshd[333]: Server listening on 0.0.0.0 port 22.
+Aug 30 18:22:27 localhost sshd[333]: Server listening on :: port 22.
+Aug 30 18:22:30 localhost login[325]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 30 18:22:30 localhost systemd-logind[271]: New session 1 of user root.
+Aug 30 18:22:30 localhost sshd[333]: Received SIGHUP; restarting.
+Aug 30 18:22:30 localhost systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Aug 30 18:22:30 localhost sshd[333]: Server listening on 0.0.0.0 port 22.
+Aug 30 18:22:30 localhost sshd[333]: Server listening on :: port 22.
+Aug 30 18:22:31 localhost sshd[333]: Received SIGHUP; restarting.
+Aug 30 18:22:31 localhost sshd[333]: Server listening on 0.0.0.0 port 22.
+Aug 30 18:22:31 localhost sshd[333]: Server listening on :: port 22.
+Aug 30 18:22:31 localhost login[451]: ROOT LOGIN  on '/dev/ttyFIQ0'
+Aug 30 18:36:57 localhost sshd[535]: Accepted password for root from 192.168.13.142 port 60340 ssh2
+Aug 30 18:36:58 localhost sshd[535]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 30 18:36:58 localhost systemd-logind[271]: New session 3 of user root.
+Aug 30 19:10:05 localhost systemd-logind[305]: New seat seat0.
+Aug 30 19:10:05 localhost systemd-logind[305]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Aug 30 19:10:09 localhost sshd[430]: Server listening on 0.0.0.0 port 22.
+Aug 30 19:10:09 localhost sshd[430]: Server listening on :: port 22.
+Aug 30 19:10:10 localhost login[422]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 30 19:10:10 localhost systemd-logind[305]: New session 1 of user root.
+Aug 30 19:10:10 localhost systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Aug 30 19:10:11 localhost login[489]: ROOT LOGIN  on '/dev/ttyFIQ0'
+Aug 30 19:10:12 localhost sshd[430]: Received SIGHUP; restarting.
+Aug 30 19:10:12 localhost sshd[430]: Server listening on 0.0.0.0 port 22.
+Aug 30 19:10:12 localhost sshd[430]: Server listening on :: port 22.
+Aug 30 19:10:12 localhost sshd[430]: Received SIGHUP; restarting.
+Aug 30 19:10:12 localhost sshd[430]: Server listening on 0.0.0.0 port 22.
+Aug 30 19:10:12 localhost sshd[430]: Server listening on :: port 22.
+Aug 30 19:17:01 localhost CRON[566]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 30 19:17:02 localhost CRON[566]: pam_unix(cron:session): session closed for user root
+Aug 30 19:19:14 localhost sshd[570]: Accepted password for root from 192.168.13.142 port 61330 ssh2
+Aug 30 19:19:14 localhost sshd[570]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 30 19:19:15 localhost systemd-logind[305]: New session 4 of user root.
+Aug 30 19:35:31 localhost sshd[570]: pam_unix(sshd:session): session closed for user root
+Aug 30 19:35:31 localhost systemd-logind[305]: Removed session 4.
+Aug 31 11:27:48 localhost sshd[1447]: Accepted password for root from 192.168.13.142 port 62298 ssh2
+Aug 31 11:27:48 localhost sshd[1447]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 11:27:48 localhost systemd-logind[305]: New session 5 of user root.
+Aug 31 11:27:48 localhost sshd[1449]: Accepted password for root from 192.168.13.142 port 62299 ssh2
+Aug 31 11:27:48 localhost sshd[1449]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 11:27:48 localhost systemd-logind[305]: New session 6 of user root.
+Aug 31 11:52:25 localhost sshd[1449]: Exiting on signal 15
+Aug 31 11:52:50 localhost systemd-logind[277]: New seat seat0.
+Aug 31 11:52:50 localhost systemd-logind[277]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Aug 31 11:52:53 localhost sshd[443]: Server listening on 0.0.0.0 port 22.
+Aug 31 11:52:53 localhost sshd[443]: Server listening on :: port 22.
+Aug 31 11:52:55 localhost login[433]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 31 11:52:55 localhost systemd-logind[277]: New session 1 of user root.
+Aug 31 11:52:55 localhost systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Aug 31 11:52:55 localhost sshd[443]: Received SIGHUP; restarting.
+Aug 31 11:52:56 localhost sshd[443]: Server listening on 0.0.0.0 port 22.
+Aug 31 11:52:56 localhost sshd[443]: Server listening on :: port 22.
+Aug 31 11:52:56 localhost sshd[443]: Received SIGHUP; restarting.
+Aug 31 11:52:56 localhost login[566]: ROOT LOGIN  on '/dev/ttyFIQ0'
+Aug 31 11:52:56 localhost sshd[443]: Server listening on 0.0.0.0 port 22.
+Aug 31 11:52:56 localhost sshd[443]: Server listening on :: port 22.
+Aug 31 11:53:13 localhost sshd[573]: Accepted password for root from 192.168.13.142 port 63233 ssh2
+Aug 31 11:53:13 localhost sshd[573]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 11:53:13 localhost systemd-logind[277]: New session 3 of user root.
+Aug 31 11:53:13 localhost sshd[575]: Accepted password for root from 192.168.13.142 port 63234 ssh2
+Aug 31 11:53:13 localhost sshd[575]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 11:53:13 localhost systemd-logind[277]: New session 4 of user root.
+Aug 31 12:12:40 localhost systemd-logind[278]: New seat seat0.
+Aug 31 12:12:40 localhost systemd-logind[278]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Aug 31 12:12:43 localhost sshd[427]: Server listening on 0.0.0.0 port 22.
+Aug 31 12:12:43 localhost sshd[427]: Server listening on :: port 22.
+Aug 31 12:12:44 localhost login[423]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 31 12:12:45 localhost systemd-logind[278]: New session 1 of user root.
+Aug 31 12:12:45 localhost systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Aug 31 12:12:45 localhost sshd[427]: Received SIGHUP; restarting.
+Aug 31 12:12:45 localhost sshd[427]: Server listening on 0.0.0.0 port 22.
+Aug 31 12:12:45 localhost sshd[427]: Server listening on :: port 22.
+Aug 31 12:12:45 localhost login[531]: ROOT LOGIN  on '/dev/ttyFIQ0'
+Aug 31 12:12:46 localhost sshd[427]: Received SIGHUP; restarting.
+Aug 31 12:12:46 localhost sshd[427]: Server listening on 0.0.0.0 port 22.
+Aug 31 12:12:46 localhost sshd[427]: Server listening on :: port 22.
+Aug 31 12:17:01 localhost CRON[567]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 31 12:17:01 localhost CRON[567]: pam_unix(cron:session): session closed for user root
+Aug 31 13:17:01 localhost CRON[607]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 31 13:17:01 localhost CRON[607]: pam_unix(cron:session): session closed for user root
+Aug 31 13:32:34 localhost sshd[627]: Accepted password for root from 192.168.13.142 port 49298 ssh2
+Aug 31 13:32:34 localhost sshd[627]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 13:32:34 localhost systemd-logind[278]: New session 5 of user root.
+Aug 31 13:32:35 localhost sshd[630]: Accepted password for root from 192.168.13.142 port 49299 ssh2
+Aug 31 13:32:35 localhost sshd[630]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 13:32:35 localhost systemd-logind[278]: New session 6 of user root.
+Aug 31 14:17:01 localhost CRON[698]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 31 14:17:01 localhost CRON[698]: pam_unix(cron:session): session closed for user root
+Aug 31 14:55:56 localhost sshd[627]: Exiting on signal 15
+Aug 31 14:55:56 localhost sshd[627]: pam_unix(sshd:session): session closed for user root
+Aug 31 14:55:56 localhost sshd[427]: Received signal 15; terminating.
+Aug 31 14:56:14 HOUZZkitF1 systemd-logind[275]: New seat seat0.
+Aug 31 14:56:14 HOUZZkitF1 systemd-logind[275]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Aug 31 14:56:18 HOUZZkitF1 sshd[431]: Server listening on 0.0.0.0 port 22.
+Aug 31 14:56:18 HOUZZkitF1 sshd[431]: Server listening on :: port 22.
+Aug 31 14:56:19 HOUZZkitF1 login[423]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 31 14:56:19 HOUZZkitF1 systemd-logind[275]: New session 1 of user root.
+Aug 31 14:56:20 HOUZZkitF1 systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Aug 31 14:56:21 HOUZZkitF1 login[501]: ROOT LOGIN  on '/dev/ttyFIQ0'
+Aug 31 14:56:21 HOUZZkitF1 sshd[431]: Received SIGHUP; restarting.
+Aug 31 14:56:21 HOUZZkitF1 sshd[431]: Server listening on 0.0.0.0 port 22.
+Aug 31 14:56:21 HOUZZkitF1 sshd[431]: Server listening on :: port 22.
+Aug 31 14:56:21 HOUZZkitF1 sshd[431]: Received SIGHUP; restarting.
+Aug 31 14:56:21 HOUZZkitF1 sshd[431]: Server listening on 0.0.0.0 port 22.
+Aug 31 14:56:21 HOUZZkitF1 sshd[431]: Server listening on :: port 22.
+Aug 31 14:56:46 HOUZZkitF1 sshd[553]: Accepted password for root from 192.168.13.142 port 52993 ssh2
+Aug 31 14:56:46 HOUZZkitF1 sshd[553]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 14:56:46 HOUZZkitF1 systemd-logind[275]: New session 3 of user root.
+Aug 31 14:56:46 HOUZZkitF1 sshd[555]: Accepted password for root from 192.168.13.142 port 52994 ssh2
+Aug 31 14:56:46 HOUZZkitF1 sshd[555]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 14:56:46 HOUZZkitF1 systemd-logind[275]: New session 4 of user root.
+Aug 31 15:06:42 HOUZZkitF1 sshd[553]: Exiting on signal 15
+Aug 31 15:06:42 HOUZZkitF1 sshd[553]: pam_unix(sshd:session): session closed for user root
+Aug 31 15:06:42 HOUZZkitF1 sshd[555]: Exiting on signal 15
+Aug 31 15:06:58 HOUZZkitF1 systemd-logind[280]: New seat seat0.
+Aug 31 15:06:58 HOUZZkitF1 systemd-logind[280]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Aug 31 15:07:02 HOUZZkitF1 sshd[428]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:07:02 HOUZZkitF1 sshd[428]: Server listening on :: port 22.
+Aug 31 15:07:03 HOUZZkitF1 login[421]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 31 15:07:03 HOUZZkitF1 systemd-logind[280]: New session 1 of user root.
+Aug 31 15:07:03 HOUZZkitF1 systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Aug 31 15:07:04 HOUZZkitF1 sshd[428]: Received SIGHUP; restarting.
+Aug 31 15:07:04 HOUZZkitF1 login[517]: ROOT LOGIN  on '/dev/ttyFIQ0'
+Aug 31 15:07:04 HOUZZkitF1 sshd[428]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:07:04 HOUZZkitF1 sshd[428]: Server listening on :: port 22.
+Aug 31 15:07:04 HOUZZkitF1 sshd[428]: Received SIGHUP; restarting.
+Aug 31 15:07:05 HOUZZkitF1 sshd[428]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:07:05 HOUZZkitF1 sshd[428]: Server listening on :: port 22.
+Aug 31 15:07:19 HOUZZkitF1 sshd[551]: Accepted password for root from 192.168.13.142 port 54475 ssh2
+Aug 31 15:07:19 HOUZZkitF1 sshd[551]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 15:07:19 HOUZZkitF1 systemd-logind[280]: New session 3 of user root.
+Aug 31 15:07:19 HOUZZkitF1 sshd[553]: Accepted password for root from 192.168.13.142 port 54476 ssh2
+Aug 31 15:07:19 HOUZZkitF1 sshd[553]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 15:07:19 HOUZZkitF1 systemd-logind[280]: New session 4 of user root.
+Aug 31 15:12:33 HOUZZkitF1 sshd[553]: Exiting on signal 15
+Aug 31 15:12:33 HOUZZkitF1 sshd[428]: Received signal 15; terminating.
+Aug 31 15:12:50 HOUZZkitF1 systemd-logind[281]: New seat seat0.
+Aug 31 15:12:50 HOUZZkitF1 systemd-logind[281]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Aug 31 15:12:53 HOUZZkitF1 sshd[431]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:12:53 HOUZZkitF1 sshd[431]: Server listening on :: port 22.
+Aug 31 15:12:55 HOUZZkitF1 login[423]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 31 15:12:55 HOUZZkitF1 systemd-logind[281]: New session 1 of user root.
+Aug 31 15:12:55 HOUZZkitF1 systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Aug 31 15:12:55 HOUZZkitF1 sshd[431]: Received SIGHUP; restarting.
+Aug 31 15:12:55 HOUZZkitF1 sshd[431]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:12:55 HOUZZkitF1 sshd[431]: Server listening on :: port 22.
+Aug 31 15:12:56 HOUZZkitF1 sshd[431]: Received SIGHUP; restarting.
+Aug 31 15:12:56 HOUZZkitF1 login[548]: ROOT LOGIN  on '/dev/ttyFIQ0'
+Aug 31 15:12:56 HOUZZkitF1 sshd[431]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:12:56 HOUZZkitF1 sshd[431]: Server listening on :: port 22.
+Aug 31 15:17:01 HOUZZkitF1 CRON[563]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 31 15:17:01 HOUZZkitF1 CRON[563]: pam_unix(cron:session): session closed for user root
+Aug 31 15:21:42 HOUZZkitF1 groupadd[878]: group added to /etc/group: name=docker, GID=124
+Aug 31 15:21:42 HOUZZkitF1 groupadd[878]: new group: name=docker, GID=124
+Aug 31 15:22:13 HOUZZkitF1 sshd[431]: Received SIGHUP; restarting.
+Aug 31 15:22:13 HOUZZkitF1 sshd[431]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:22:13 HOUZZkitF1 sshd[431]: Server listening on :: port 22.
+Aug 31 15:22:40 HOUZZkitF1 sshd[1327]: Accepted password for root from 192.168.13.142 port 55849 ssh2
+Aug 31 15:22:40 HOUZZkitF1 sshd[1327]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 15:22:40 HOUZZkitF1 systemd-logind[281]: New session 4 of user root.
+Aug 31 15:22:41 HOUZZkitF1 sshd[1329]: Accepted password for root from 192.168.13.142 port 55850 ssh2
+Aug 31 15:22:41 HOUZZkitF1 sshd[1329]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 15:22:41 HOUZZkitF1 systemd-logind[281]: New session 5 of user root.
+Aug 31 15:48:02 HOUZZkitF1 sshd[1329]: Exiting on signal 15
+Aug 31 15:48:02 HOUZZkitF1 sshd[1327]: Exiting on signal 15
+Aug 31 15:48:19 HOUZZkitF1 systemd-logind[311]: New seat seat0.
+Aug 31 15:48:19 HOUZZkitF1 systemd-logind[311]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Aug 31 15:48:25 HOUZZkitF1 sshd[466]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:48:25 HOUZZkitF1 sshd[466]: Server listening on :: port 22.
+Aug 31 15:48:27 HOUZZkitF1 sshd[470]: Accepted password for root from 192.168.13.142 port 56432 ssh2
+Aug 31 15:48:27 HOUZZkitF1 sshd[470]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 15:48:27 HOUZZkitF1 systemd-logind[311]: New session 1 of user root.
+Aug 31 15:48:27 HOUZZkitF1 systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Aug 31 15:48:28 HOUZZkitF1 sshd[493]: Accepted password for root from 192.168.13.142 port 56433 ssh2
+Aug 31 15:48:28 HOUZZkitF1 sshd[493]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 15:48:28 HOUZZkitF1 systemd-logind[311]: New session 3 of user root.
+Aug 31 15:48:28 HOUZZkitF1 sshd[466]: Received SIGHUP; restarting.
+Aug 31 15:48:28 HOUZZkitF1 sshd[466]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:48:28 HOUZZkitF1 sshd[466]: Server listening on :: port 22.
+Aug 31 15:48:29 HOUZZkitF1 sshd[466]: Received SIGHUP; restarting.
+Aug 31 15:48:29 HOUZZkitF1 sshd[466]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:48:29 HOUZZkitF1 sshd[466]: Server listening on :: port 22.
+Aug 31 15:48:55 HOUZZkitF1 login[711]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 31 15:48:55 HOUZZkitF1 systemd-logind[311]: New session 4 of user root.
+Aug 31 15:48:55 HOUZZkitF1 login[724]: ROOT LOGIN  on '/dev/ttyFIQ0'
+Aug 31 15:49:01 HOUZZkitF1 sshd[466]: Received SIGHUP; restarting.
+Aug 31 15:49:01 HOUZZkitF1 sshd[466]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:49:01 HOUZZkitF1 sshd[466]: Server listening on :: port 22.
+Aug 31 15:55:34 HOUZZkitF1 systemd-logind[316]: New seat seat0.
+Aug 31 15:55:34 HOUZZkitF1 systemd-logind[316]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Aug 31 15:55:40 HOUZZkitF1 sshd[468]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:55:40 HOUZZkitF1 sshd[468]: Server listening on :: port 22.
+Aug 31 15:55:43 HOUZZkitF1 sshd[468]: Received SIGHUP; restarting.
+Aug 31 15:55:43 HOUZZkitF1 sshd[468]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:55:43 HOUZZkitF1 sshd[468]: Server listening on :: port 22.
+Aug 31 15:55:43 HOUZZkitF1 sshd[468]: Received SIGHUP; restarting.
+Aug 31 15:55:44 HOUZZkitF1 sshd[468]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:55:44 HOUZZkitF1 sshd[468]: Server listening on :: port 22.
+Aug 31 15:56:10 HOUZZkitF1 login[683]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 31 15:56:11 HOUZZkitF1 systemd-logind[316]: New session 1 of user root.
+Aug 31 15:56:11 HOUZZkitF1 systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Aug 31 15:56:12 HOUZZkitF1 login[710]: ROOT LOGIN  on '/dev/ttyFIQ0'
+Aug 31 15:56:16 HOUZZkitF1 sshd[468]: Received SIGHUP; restarting.
+Aug 31 15:56:16 HOUZZkitF1 sshd[468]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:56:16 HOUZZkitF1 sshd[468]: Server listening on :: port 22.
+Aug 31 15:56:24 HOUZZkitF1 sshd[1009]: Accepted password for root from 192.168.13.142 port 56682 ssh2
+Aug 31 15:56:24 HOUZZkitF1 sshd[1009]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 15:56:24 HOUZZkitF1 systemd-logind[316]: New session 3 of user root.
+Aug 31 15:56:24 HOUZZkitF1 sshd[1011]: Accepted password for root from 192.168.13.142 port 56683 ssh2
+Aug 31 15:56:24 HOUZZkitF1 sshd[1011]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 15:56:24 HOUZZkitF1 systemd-logind[316]: New session 4 of user root.
+Aug 31 15:57:05 HOUZZkitF1 sshd[1009]: pam_unix(sshd:session): session closed for user root
+Aug 31 15:57:05 HOUZZkitF1 systemd-logind[316]: Removed session 3.
+Aug 31 15:57:06 HOUZZkitF1 sshd[1011]: pam_unix(sshd:session): session closed for user root
+Aug 31 15:57:06 HOUZZkitF1 systemd-logind[316]: Removed session 4.
+Aug 31 15:57:09 HOUZZkitF1 sshd[1040]: Accepted password for root from 192.168.13.142 port 56688 ssh2
+Aug 31 15:57:09 HOUZZkitF1 sshd[1040]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 15:57:09 HOUZZkitF1 systemd-logind[316]: New session 5 of user root.
+Aug 31 15:57:09 HOUZZkitF1 sshd[1042]: Accepted password for root from 192.168.13.142 port 56689 ssh2
+Aug 31 15:57:09 HOUZZkitF1 sshd[1042]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 15:57:09 HOUZZkitF1 systemd-logind[316]: New session 6 of user root.
+Aug 31 15:58:07 HOUZZkitF1 sshd[1040]: Exiting on signal 15
+Aug 31 15:58:07 HOUZZkitF1 sshd[468]: Received signal 15; terminating.
+Aug 31 15:58:26 HOUZZkitF1 systemd-logind[321]: New seat seat0.
+Aug 31 15:58:26 HOUZZkitF1 systemd-logind[321]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Aug 31 15:58:31 HOUZZkitF1 sshd[466]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:58:31 HOUZZkitF1 sshd[466]: Server listening on :: port 22.
+Aug 31 15:58:33 HOUZZkitF1 sshd[499]: Accepted password for root from 192.168.13.142 port 56727 ssh2
+Aug 31 15:58:33 HOUZZkitF1 sshd[499]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 15:58:33 HOUZZkitF1 sshd[466]: Received SIGHUP; restarting.
+Aug 31 15:58:33 HOUZZkitF1 systemd-logind[321]: New session 1 of user root.
+Aug 31 15:58:33 HOUZZkitF1 systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Aug 31 15:58:33 HOUZZkitF1 sshd[466]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:58:33 HOUZZkitF1 sshd[466]: Server listening on :: port 22.
+Aug 31 15:58:33 HOUZZkitF1 sshd[529]: Accepted password for root from 192.168.13.142 port 56728 ssh2
+Aug 31 15:58:33 HOUZZkitF1 sshd[529]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 15:58:33 HOUZZkitF1 systemd-logind[321]: New session 3 of user root.
+Aug 31 15:58:34 HOUZZkitF1 sshd[466]: Received SIGHUP; restarting.
+Aug 31 15:58:34 HOUZZkitF1 sshd[466]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:58:34 HOUZZkitF1 sshd[466]: Server listening on :: port 22.
+Aug 31 15:59:00 HOUZZkitF1 login[712]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 31 15:59:00 HOUZZkitF1 systemd-logind[321]: New session 4 of user root.
+Aug 31 15:59:01 HOUZZkitF1 login[725]: ROOT LOGIN  on '/dev/ttyFIQ0'
+Aug 31 15:59:07 HOUZZkitF1 sshd[466]: Received SIGHUP; restarting.
+Aug 31 15:59:07 HOUZZkitF1 sshd[466]: Server listening on 0.0.0.0 port 22.
+Aug 31 15:59:07 HOUZZkitF1 sshd[466]: Server listening on :: port 22.
+Aug 31 16:05:40 HOUZZkitF1 sshd[1073]: Accepted password for root from 192.168.13.142 port 56860 ssh2
+Aug 31 16:05:40 HOUZZkitF1 sshd[1073]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 16:05:40 HOUZZkitF1 systemd-logind[321]: New session 5 of user root.
+Aug 31 16:05:40 HOUZZkitF1 sshd[1075]: Accepted password for root from 192.168.13.142 port 56861 ssh2
+Aug 31 16:05:40 HOUZZkitF1 sshd[1075]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug 31 16:05:40 HOUZZkitF1 systemd-logind[321]: New session 6 of user root.
+Aug 31 16:17:01 HOUZZkitF1 CRON[1153]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 31 16:17:01 HOUZZkitF1 CRON[1153]: pam_unix(cron:session): session closed for user root
+Aug 31 17:17:01 HOUZZkitF1 CRON[1295]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 31 17:17:01 HOUZZkitF1 CRON[1295]: pam_unix(cron:session): session closed for user root
+Aug 31 18:17:01 HOUZZkitF1 CRON[1370]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 31 18:17:01 HOUZZkitF1 CRON[1370]: pam_unix(cron:session): session closed for user root
+Aug 31 19:17:01 HOUZZkitF1 CRON[1443]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 31 19:17:01 HOUZZkitF1 CRON[1443]: pam_unix(cron:session): session closed for user root
+Aug 31 19:43:50 HOUZZkitF1 systemd-logind[315]: New seat seat0.
+Aug 31 19:43:50 HOUZZkitF1 systemd-logind[315]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Aug 31 19:43:56 HOUZZkitF1 sshd[465]: Server listening on 0.0.0.0 port 22.
+Aug 31 19:43:56 HOUZZkitF1 sshd[465]: Server listening on :: port 22.
+Aug 31 19:43:59 HOUZZkitF1 sshd[465]: Received SIGHUP; restarting.
+Aug 31 19:43:59 HOUZZkitF1 sshd[465]: Server listening on 0.0.0.0 port 22.
+Aug 31 19:43:59 HOUZZkitF1 sshd[465]: Server listening on :: port 22.
+Aug 31 19:44:00 HOUZZkitF1 sshd[465]: Received SIGHUP; restarting.
+Aug 31 19:44:00 HOUZZkitF1 sshd[465]: Server listening on 0.0.0.0 port 22.
+Aug 31 19:44:00 HOUZZkitF1 sshd[465]: Server listening on :: port 22.
+Aug 31 19:44:27 HOUZZkitF1 login[683]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 31 19:44:27 HOUZZkitF1 systemd-logind[315]: New session 1 of user root.
+Aug 31 19:44:27 HOUZZkitF1 systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Aug 31 19:44:29 HOUZZkitF1 login[713]: ROOT LOGIN  on '/dev/ttyFIQ0'
+Aug 31 19:44:33 HOUZZkitF1 sshd[465]: Received SIGHUP; restarting.
+Aug 31 19:44:33 HOUZZkitF1 sshd[465]: Server listening on 0.0.0.0 port 22.
+Aug 31 19:44:33 HOUZZkitF1 sshd[465]: Server listening on :: port 22.
+Aug 31 20:03:05 HOUZZkitF1 systemd-logind[315]: New seat seat0.
+Aug 31 20:03:05 HOUZZkitF1 systemd-logind[315]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Aug 31 20:03:12 HOUZZkitF1 sshd[469]: Server listening on 0.0.0.0 port 22.
+Aug 31 20:03:12 HOUZZkitF1 sshd[469]: Server listening on :: port 22.
+Aug 31 20:03:15 HOUZZkitF1 sshd[469]: Received SIGHUP; restarting.
+Aug 31 20:03:15 HOUZZkitF1 sshd[469]: Server listening on 0.0.0.0 port 22.
+Aug 31 20:03:15 HOUZZkitF1 sshd[469]: Server listening on :: port 22.
+Aug 31 20:03:16 HOUZZkitF1 sshd[469]: Received SIGHUP; restarting.
+Aug 31 20:03:16 HOUZZkitF1 sshd[469]: Server listening on 0.0.0.0 port 22.
+Aug 31 20:03:16 HOUZZkitF1 sshd[469]: Server listening on :: port 22.
+Aug 31 20:03:43 HOUZZkitF1 login[677]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 31 20:03:43 HOUZZkitF1 systemd-logind[315]: New session 1 of user root.
+Aug 31 20:03:43 HOUZZkitF1 systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Aug 31 20:03:45 HOUZZkitF1 login[711]: ROOT LOGIN  on '/dev/ttyFIQ0'
+Aug 31 20:03:50 HOUZZkitF1 sshd[469]: Received SIGHUP; restarting.
+Aug 31 20:03:50 HOUZZkitF1 sshd[469]: Server listening on 0.0.0.0 port 22.
+Aug 31 20:03:50 HOUZZkitF1 sshd[469]: Server listening on :: port 22.
+Aug 31 20:17:01 HOUZZkitF1 CRON[1027]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 31 20:17:01 HOUZZkitF1 CRON[1027]: pam_unix(cron:session): session closed for user root
+Sep  1 09:14:11 HOUZZkitF1 systemd-logind[330]: New seat seat0.
+Sep  1 09:14:11 HOUZZkitF1 systemd-logind[330]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Sep  1 09:14:16 HOUZZkitF1 sshd[464]: Server listening on 0.0.0.0 port 22.
+Sep  1 09:14:16 HOUZZkitF1 sshd[464]: Server listening on :: port 22.
+Sep  1 09:14:19 HOUZZkitF1 sshd[464]: Received SIGHUP; restarting.
+Sep  1 09:14:19 HOUZZkitF1 sshd[464]: Server listening on 0.0.0.0 port 22.
+Sep  1 09:14:19 HOUZZkitF1 sshd[464]: Server listening on :: port 22.
+Sep  1 09:14:20 HOUZZkitF1 sshd[464]: Received SIGHUP; restarting.
+Sep  1 09:14:20 HOUZZkitF1 sshd[464]: Server listening on 0.0.0.0 port 22.
+Sep  1 09:14:20 HOUZZkitF1 sshd[464]: Server listening on :: port 22.
+Sep  1 09:14:47 HOUZZkitF1 login[682]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Sep  1 09:14:47 HOUZZkitF1 systemd-logind[330]: New session 1 of user root.
+Sep  1 09:14:47 HOUZZkitF1 systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  1 09:14:49 HOUZZkitF1 login[733]: ROOT LOGIN  on '/dev/ttyFIQ0'
+Sep  1 09:14:55 HOUZZkitF1 sshd[464]: Received SIGHUP; restarting.
+Sep  1 09:14:55 HOUZZkitF1 sshd[464]: Server listening on 0.0.0.0 port 22.
+Sep  1 09:14:55 HOUZZkitF1 sshd[464]: Server listening on :: port 22.
+Sep  1 09:17:01 HOUZZkitF1 CRON[1516]: pam_unix(cron:session): session opened for user root by (uid=0)
+Sep  1 09:17:01 HOUZZkitF1 CRON[1516]: pam_unix(cron:session): session closed for user root
+Sep  1 10:07:38 HOUZZkitF1 sshd[1554]: Accepted password for root from 192.168.13.142 port 65311 ssh2
+Sep  1 10:07:38 HOUZZkitF1 sshd[1554]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  1 10:07:38 HOUZZkitF1 systemd-logind[330]: New session 4 of user root.
+Sep  1 10:07:38 HOUZZkitF1 sshd[1557]: Accepted password for root from 192.168.13.142 port 65312 ssh2
+Sep  1 10:07:38 HOUZZkitF1 sshd[1557]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  1 10:07:38 HOUZZkitF1 systemd-logind[330]: New session 5 of user root.
+Sep  1 10:17:01 HOUZZkitF1 CRON[1586]: pam_unix(cron:session): session opened for user root by (uid=0)
+Sep  1 10:17:01 HOUZZkitF1 CRON[1586]: pam_unix(cron:session): session closed for user root
+Sep  1 11:00:25 HOUZZkitF1 sshd[1554]: Exiting on signal 15
+Sep  1 11:00:25 HOUZZkitF1 sshd[464]: Received signal 15; terminating.
+Sep  1 11:00:42 HOUZZkitF1 systemd-logind[315]: New seat seat0.
+Sep  1 11:00:42 HOUZZkitF1 systemd-logind[315]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Sep  1 11:00:48 HOUZZkitF1 sshd[469]: Server listening on 0.0.0.0 port 22.
+Sep  1 11:00:48 HOUZZkitF1 sshd[469]: Server listening on :: port 22.
+Sep  1 11:00:51 HOUZZkitF1 sshd[469]: Received SIGHUP; restarting.
+Sep  1 11:00:51 HOUZZkitF1 sshd[469]: Server listening on 0.0.0.0 port 22.
+Sep  1 11:00:51 HOUZZkitF1 sshd[469]: Server listening on :: port 22.
+Sep  1 11:00:52 HOUZZkitF1 sshd[469]: Received SIGHUP; restarting.
+Sep  1 11:00:52 HOUZZkitF1 sshd[469]: Server listening on 0.0.0.0 port 22.
+Sep  1 11:00:52 HOUZZkitF1 sshd[469]: Server listening on :: port 22.
+Sep  1 11:01:19 HOUZZkitF1 login[686]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Sep  1 11:01:19 HOUZZkitF1 systemd-logind[315]: New session 1 of user root.
+Sep  1 11:01:20 HOUZZkitF1 systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  1 11:01:21 HOUZZkitF1 login[718]: ROOT LOGIN  on '/dev/ttyFIQ0'
+Sep  1 11:01:25 HOUZZkitF1 sshd[469]: Received SIGHUP; restarting.
+Sep  1 11:01:25 HOUZZkitF1 sshd[469]: Server listening on 0.0.0.0 port 22.
+Sep  1 11:01:25 HOUZZkitF1 sshd[469]: Server listening on :: port 22.
+Sep  1 11:02:38 HOUZZkitF1 sshd[1028]: Accepted password for root from 192.168.13.142 port 50979 ssh2
+Sep  1 11:02:38 HOUZZkitF1 sshd[1028]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  1 11:02:38 HOUZZkitF1 systemd-logind[315]: New session 3 of user root.
+Sep  1 11:02:38 HOUZZkitF1 sshd[1030]: Accepted password for root from 192.168.13.142 port 50980 ssh2
+Sep  1 11:02:38 HOUZZkitF1 sshd[1030]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  1 11:02:38 HOUZZkitF1 systemd-logind[315]: New session 4 of user root.
+Sep  1 11:17:01 HOUZZkitF1 CRON[1065]: pam_unix(cron:session): session opened for user root by (uid=0)
+Sep  1 11:17:01 HOUZZkitF1 CRON[1065]: pam_unix(cron:session): session closed for user root
+Sep  1 11:37:10 HOUZZkitF1 sshd[469]: Received signal 15; terminating.
+Sep  1 11:37:10 HOUZZkitF1 sshd[1088]: Server listening on 0.0.0.0 port 22.
+Sep  1 11:37:10 HOUZZkitF1 sshd[1088]: Server listening on :: port 22.
+Sep  1 11:37:18 HOUZZkitF1 sshd[1028]: pam_unix(sshd:session): session closed for user root
+Sep  1 11:37:18 HOUZZkitF1 systemd-logind[315]: Removed session 3.
+Sep  1 11:37:19 HOUZZkitF1 sshd[1030]: pam_unix(sshd:session): session closed for user root
+Sep  1 11:37:19 HOUZZkitF1 systemd-logind[315]: Removed session 4.
+Sep  1 11:37:22 HOUZZkitF1 sshd[1091]: Accepted password for root from 192.168.13.142 port 58261 ssh2
+Sep  1 11:37:22 HOUZZkitF1 sshd[1091]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  1 11:37:22 HOUZZkitF1 systemd-logind[315]: New session 6 of user root.
+Sep  1 11:37:22 HOUZZkitF1 sshd[1093]: Accepted password for root from 192.168.13.142 port 58262 ssh2
+Sep  1 11:37:22 HOUZZkitF1 sshd[1093]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Sep  1 11:37:22 HOUZZkitF1 systemd-logind[315]: New session 7 of user root.
+Sep  1 12:17:01 HOUZZkitF1 CRON[1220]: pam_unix(cron:session): session opened for user root by (uid=0)
+Sep  1 12:17:01 HOUZZkitF1 CRON[1220]: pam_unix(cron:session): session closed for user root
+Sep  1 12:28:15 HOUZZkitF1 sshd[1091]: Exiting on signal 15
+Sep  1 12:28:15 HOUZZkitF1 sshd[1088]: Received signal 15; terminating.
+Sep  4 12:34:57 houzzkit systemd-logind[330]: New seat seat0.
+Sep  4 12:34:57 houzzkit systemd-logind[330]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Sep  4 12:35:01 houzzkit sshd[579]: Server listening on 0.0.0.0 port 22.
+Sep  4 12:35:01 houzzkit sshd[579]: Server listening on :: port 22.
+Sep  4 12:35:03 houzzkit sshd[579]: Received SIGHUP; restarting.
+Sep  4 12:35:03 houzzkit sshd[579]: Server listening on 0.0.0.0 port 22.
+Sep  4 12:35:03 houzzkit sshd[579]: Server listening on :: port 22.
+Sep  4 12:35:04 houzzkit sshd[579]: Received SIGHUP; restarting.
+Sep  4 12:35:04 houzzkit sshd[579]: Server listening on 0.0.0.0 port 22.
+Sep  4 12:35:04 houzzkit sshd[579]: Server listening on :: port 22.
+Sep  4 12:35:12 houzzkit login[812]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Sep  4 12:35:13 houzzkit systemd-logind[330]: New session 1 of user root.
+Sep  4 12:35:13 houzzkit systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  4 12:35:14 houzzkit login[877]: ROOT LOGIN  on '/dev/ttyFIQ0'
+Sep  4 12:35:24 houzzkit sshd[579]: Received SIGHUP; restarting.
+Sep  4 12:35:24 houzzkit sshd[579]: Server listening on 0.0.0.0 port 22.
+Sep  4 12:35:24 houzzkit sshd[579]: Server listening on :: port 22.
+Sep  4 12:44:32 houzzkit sshd[579]: Received signal 15; terminating.
+Sep  4 12:44:56 houzzkit systemd-logind[351]: New seat seat0.
+Sep  4 12:44:56 houzzkit systemd-logind[351]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Sep  4 12:44:59 houzzkit sshd[584]: Server listening on 0.0.0.0 port 22.
+Sep  4 12:44:59 houzzkit sshd[584]: Server listening on :: port 22.
+Sep  4 12:45:01 houzzkit sshd[584]: Received SIGHUP; restarting.
+Sep  4 12:45:02 houzzkit sshd[584]: Server listening on 0.0.0.0 port 22.
+Sep  4 12:45:02 houzzkit sshd[584]: Server listening on :: port 22.
+Sep  4 12:45:02 houzzkit sshd[584]: Received SIGHUP; restarting.
+Sep  4 12:45:02 houzzkit sshd[584]: Server listening on 0.0.0.0 port 22.
+Sep  4 12:45:02 houzzkit sshd[584]: Server listening on :: port 22.
+Sep  4 12:45:09 houzzkit login[812]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Sep  4 12:45:09 houzzkit systemd-logind[351]: New session 1 of user root.
+Sep  4 12:45:09 houzzkit systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  4 12:45:10 houzzkit login[845]: ROOT LOGIN  on '/dev/ttyFIQ0'
+Sep  4 12:45:18 houzzkit sshd[584]: Received SIGHUP; restarting.
+Sep  4 12:45:18 houzzkit sshd[584]: Server listening on 0.0.0.0 port 22.
+Sep  4 12:45:18 houzzkit sshd[584]: Server listening on :: port 22.
+Sep  8 14:45:52 houzzkit systemd-logind[312]: New seat seat0.
+Sep  8 14:45:52 houzzkit systemd-logind[312]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Sep  8 14:46:20 houzzkit dbus-daemon[319]: [system] Failed to activate service 'org.freedesktop.hostname1': timed out (service_start_timeout=25000ms)
+Sep  8 14:46:21 houzzkit sshd[576]: Server listening on 0.0.0.0 port 22.
+Sep  8 14:46:21 houzzkit sshd[576]: Server listening on :: port 22.
+Sep  8 14:46:28 houzzkit sshd[576]: Received SIGHUP; restarting.
+Sep  8 14:46:28 houzzkit sshd[576]: Server listening on 0.0.0.0 port 22.
+Sep  8 14:46:28 houzzkit sshd[576]: Server listening on :: port 22.
+Sep  8 14:46:33 houzzkit login[773]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Sep  8 14:46:34 houzzkit systemd-logind[312]: New session 1 of user root.
+Sep  8 14:46:34 houzzkit systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Sep  8 14:46:35 houzzkit sshd[576]: Received SIGHUP; restarting.
+Sep  8 14:46:35 houzzkit sshd[576]: Server listening on 0.0.0.0 port 22.
+Sep  8 14:46:35 houzzkit sshd[576]: Server listening on :: port 22.
+Sep  8 14:46:35 houzzkit login[872]: ROOT LOGIN  on '/dev/ttyFIQ0'
+Sep  8 14:46:45 houzzkit dbus-daemon[319]: [system] Failed to activate service 'org.freedesktop.resolve1': timed out (service_start_timeout=25000ms)
+Sep  8 14:46:46 houzzkit sshd[576]: Received SIGHUP; restarting.
+Sep  8 14:46:46 houzzkit sshd[576]: Server listening on 0.0.0.0 port 22.
+Sep  8 14:46:46 houzzkit sshd[576]: Server listening on :: port 22.
+Sep  8 15:14:26 houzzkit systemd-logind[1282]: New seat seat0.
+Sep  8 15:14:26 houzzkit systemd-logind[1282]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Sep  8 15:14:26 houzzkit systemd-logind[1282]: New session 1 of user root.
+Sep  8 15:19:10 houzzkit CRON[1308]: pam_unix(cron:session): session opened for user root by (uid=0)
+Sep  8 15:19:10 houzzkit CRON[1308]: pam_unix(cron:session): session closed for user root
+Sep  8 15:38:03 houzzkit systemd-logind[1321]: New seat seat0.
+Sep  8 15:38:03 houzzkit systemd-logind[1321]: Watching system buttons on /dev/input/event0 (rk805 pwrkey)
+Sep  8 15:38:03 houzzkit systemd-logind[1321]: New session 1 of user root.

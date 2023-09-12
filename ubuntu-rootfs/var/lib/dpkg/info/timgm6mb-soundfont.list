@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/sounds
+/usr/share/sounds/sf2
+/usr/share/sounds/sf2/TimGM6mb.sf2
+/usr/share/doc
+/usr/share/doc/timgm6mb-soundfont
+/usr/share/doc/timgm6mb-soundfont/copyright
+/usr/share/doc/timgm6mb-soundfont/changelog.Debian.gz
+/etc
+/etc/timidity
+/etc/timidity/timgm6mb.cfg

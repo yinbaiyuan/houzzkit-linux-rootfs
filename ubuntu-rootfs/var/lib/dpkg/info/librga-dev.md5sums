@@ -1,0 +1,8 @@
+45d443a50f959bc2fe0d7808998c133d  usr/include/rga/RgaApi.h
+1310ea62fe152ae81adb955ef5770b1a  usr/include/rga/RockchipRga.h
+a6c7ff1e939f46abf0f6bec296c04834  usr/include/rga/RockchipRgaMacro.h
+1f6df33a83b92a78425c7c3b24183d34  usr/include/rga/drmrga.h
+4a11a2f2b15a7820fb7c12bb340a160a  usr/include/rga/rga.h
+bb2215919d6af2c2ccf68ca8bc69dd77  usr/lib/aarch64-linux-gnu/pkgconfig/librga.pc
+a200f755e961242ad947c931a7404f75  usr/share/doc/librga-dev/changelog.Debian.gz
+f29d2292c0894469a2e2ef5aac77b647  usr/share/doc/librga-dev/copyright

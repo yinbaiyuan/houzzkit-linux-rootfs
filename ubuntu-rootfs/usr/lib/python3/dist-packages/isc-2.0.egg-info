@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: isc
+Version: 2.0
+Summary: Python functions to support BIND utilities
+Home-page: https://www.isc.org/bind
+Author: Internet Systems Consortium, Inc
+Author-email: info@isc.org
+License: MPL
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: ply

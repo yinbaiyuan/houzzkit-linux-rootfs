@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/debug
+/usr/lib/debug/.build-id
+/usr/lib/debug/.build-id/73
+/usr/lib/debug/.build-id/73/8ef159ff04e378b4159774d843873f65e919a9.debug
+/usr/lib/debug/.build-id/b7
+/usr/lib/debug/.build-id/b7/1461f8f6334053eca49fd5f51800fd870107ce.debug
+/usr/share
+/usr/share/doc
+/usr/share/doc/gstreamer1.0-rockchip1-dbgsym

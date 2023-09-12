@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/aarch64-linux-gnu
+/usr/lib/aarch64-linux-gnu/libWildMidi.so.2.0.1
+/usr/share
+/usr/share/doc
+/usr/share/doc/libwildmidi2
+/usr/share/doc/libwildmidi2/changelog.Debian.gz
+/usr/share/doc/libwildmidi2/copyright
+/usr/lib/aarch64-linux-gnu/libWildMidi.so.2

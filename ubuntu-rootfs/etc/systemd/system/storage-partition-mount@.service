@@ -1,0 +1,9 @@
+[Unit]
+Description=Auto mount umount storage partition on %i
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/etc/systemd/system/auto-partition-mount.sh add %i
+ExecStop=/etc/systemd/system/auto-partition-mount.sh remove %i
+

@@ -1,0 +1,19 @@
+Package: python3.8-doc
+Source: python3.8
+Priority: optional
+Section: doc
+Installed-Size: 112
+Maintainer: Matthias Klose <doko@debian.org>
+Architecture: all
+Version: 3.8.12-1+bionic2
+Suggests: python3.8
+Depends: libjs-jquery, libjs-underscore
+Filename: pool/main/p/python3.8/python3.8-doc_3.8.12-1+bionic2_all.deb
+Size: 59212
+MD5sum: 7376c91ed044a7003e1a6981874edfff
+SHA1: f84830e48a6572d99315aa24d8159021d04a03e3
+SHA256: f3f3b30749e934d0932e2c1a3ad72d2260de7ed0ce34880459a8576dfdf3269f
+Description: Documentation for the high-level object-oriented language Python (v3.8)
+Description-md5: 2d2853a074626214d786d0741ee881b9
+Multi-Arch: foreign
+

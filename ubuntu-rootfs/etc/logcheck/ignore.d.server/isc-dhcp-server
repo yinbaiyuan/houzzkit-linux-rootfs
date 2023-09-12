@@ -1,0 +1,48 @@
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): Internet (Software|Systems) Consortium DHCP Server [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): Copyright [0-9-]+ Internet (Software|Systems) Consortium\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): All rights reserved\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): For info, please visit http://www.isc.org/(products/DHCP|sw/dhcp/)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): Wrote [0-9]+ (leases|(class|group|deleted host|new dynamic host) decls) to leases file\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): (BOOTREQUEST|DHCPDISCOVER) from [:[:alnum:]]+ (\([\(\):._[:alnum:]-]+\) )?via [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): BOOTREPLY (for|on) [.0-9]{7,15} to [:[:alnum:]]+ (\([:._[:alnum:]-]+\) )?via [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): DHCPOFFER on [.0-9]{7,15} to [:[:alnum:]]+ (\([\(\)._[:alnum:]-]+\) )?via [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): DHCPREQUEST for [.0-9]{7,15} (\([.0-9]{7,15}\) )?from [:._[:alnum:]-]+ (\([\(\)._[:alnum:]-]+\) )?via [._[:alnum:]-]+(: unknown lease [.0-9]{7,15}\.)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): DHCPACK on [.0-9]{7,15} to [:[:alnum:]]+ (\([\(\)._[:alnum:]-]+\) )?via [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd(-2\.2\.x|): DHCP(NAK|RELEASE|INFORM) (on|from) ([.0-9]{7,15}|[:[:alnum:].]+)$
+#Added for dhcp 3
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPDISCOVER from [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [._[:alnum:]-]+(: load balance to peer [._[:alnum:]-]+)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPOFFER on [.0-9]{7,15} to [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPREQUEST for [.0-9]{7,15} (\([.0-9]{7,15}\) |)from [:[:alnum:]]+ (\([._[:alnum:]-]+\) )?via [._[:alnum:]-]+(: load balance to peer [._[:alnum:]-]+\.?|: lease owned by peer\.?|: wrong network\.?|: lease [.0-9]{7,15} unavailable\.?)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK on [.0-9]{7,15} to [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPNAK on [.0-9]{7,15} to [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPINFORM from [.0-9]{7,15} via [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPRELEASE of [.0-9]{7,15} from [:[:alnum:]]+ (\([._[:alnum:]-]+\) |)via [._[:alnum:]-]+ \((not |)found\)$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: DHCPACK to [.0-9]{7,15}( \(([:[:xdigit:]]+|<no client hardware address>)\) via [._[:alnum:]-]+)?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: ((balancing|balanced) )?pool [0-9a-f]{6,7} [.0-9]{7,15}/[:[:alnum:]]+ ? total [:[:alnum:]]+  free [:[:alnum:]]+  backup [:[:alnum:]]+  lts [:[:alnum:]-]+.*(  max-(own \(\+/-\)[[:digit:]]+|misbal [[:digit:]]+))?$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: ICMP Echo reply while lease [.[:digit:]]{7,15} valid\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: uid lease [.0-9]{7,15} for client [:[:xdigit:]]+ is duplicate on [.0-9]{7,15}/[[:digit:]]+$
+# Dyndns support
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: [Aa]dded (new )?(forward|reverse) map from [._[:alnum:]-]+ to [._[:alnum:]-]+$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: removed reverse map on [._[:alnum:]-]+\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: Can't update forward map [._[:alnum:]-]+ to [.0-9]{7,15}: no such RRset$
+# udhcpd support
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ udhcpd\[[0-9]+\]: sending OFFER of [.0-9]{7,15}$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ udhcpd\[[0-9]+\]: sending ACK to [.0-9]{7,15}$
+# These two rules match specifically for ddns_remove_a()
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: if [._[:alnum:]-]+ IN TXT "[[:alnum:]]+" rrset exists and [._[:alnum:]-]+ IN A [.0-9]{7,15} rrset exists delete [._[:alnum:]-]+ IN A [.0-9]{7,15}: success\.$
+^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd: if [._[:alnum:]-]+ IN A rrset doesn't exist delete [._[:alnum:]-]+ IN TXT "[[:alnum:]]+": success\.$
+# The preceding rules could be rewritten as follows to match most output from
+# print_dns_status(), also called for the expr_dns_transaction opcode.  I'd
+# rather not proceed without hearing from someone using DDNS updates, though.
+#^\w{3} [ :0-9]{11} [._[:alnum:]-]+ dhcpd:( (if|and|add|delete) [._[:alnum:]-]+ ([[:digit:]]+ )?IN ((A|PTR|MX|CNAME)( [._[:alnum:]-]+)?|TXT "[^"]*"|CNAME <keydata>)( (rrset|domain) (exists|doesn't exist))?)+: success\.$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Connecting to LDAP server [:_.[:alnum:]-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: TLS session successfully started to [:_.[:alnum:]-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Successfully logged into LDAP server [._[:alnum:]-]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: (Found dhcpServer LDAP entry|LDAP: Parsing dhcpServer options|LDAP: Parsing dhcpService DN|Found LDAP entry|Parsing external DNs for) '[%=.,_[:alnum:]-]+'( \.\.\.)?$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: (Searching|No host entry) for \(\&\(objectClass=dhcpHost\)\(dhcpHWAddress=ethernet [[:xdigit:]]{2}:[[:xdigit:]]{2}:[[:xdigit:]]{2}:[[:xdigit:]]{2}:[[:xdigit:]]{2}:[[:xdigit:]]{2}\)\) in LDAP tree [=,.[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Found dhcpHWAddress LDAP entry [-_=,.[:alnum:]]+$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Sending the following options: '(filename \"[.[:alnum:]]+\"|(fixed-address|next-server) [.[:digit:]]{7,15}|;#012)+'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Sending config line '(allow booting|allow bootp|ddns-update-style (ad-hoc|interim|none)|(default|max|min)-lease-time [[:digit:]]+|authoritative|option domain-name "[._[:alnum:]-]+"|option domain-name-servers [._,[:alnum:][:space:]-]+|option subnet-mask [.[:digit:]]{7,15}|;#012)+'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Sending config line '((subnet|netmask|option routers|option subnet-mask) [.[:digit:]]{7,15}|(default|max|min)-lease-time [[:digit:]]+|[[:space:]]|\{#012|\}#012|;#012)+'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: Sending config line 'pool (range [.[:digit:]]{7,15} [.[:digit:]]+|(default|min|max)-lease-time [[:digit:]]+|failover peer "[-._[:alnum:]]+"|deny dynamic bootp clients|[[:space:]]|\{#012|\}#012|;#012)+'$
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ dhcpd: bind update on [.[:digit:]]{7,15} got ack from dhcp-failover: xid mismatch\.$

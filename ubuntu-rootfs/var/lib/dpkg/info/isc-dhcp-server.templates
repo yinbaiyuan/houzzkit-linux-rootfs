@@ -1,0 +1,98 @@
+
+Template: isc-dhcp-server/interfaces
+Type: string
+Description: Network interfaces on which the DHCP server should listen:
+ Please specify on which network interface(s) the DHCP server should
+ listen for DHCP requests. Multiple interface names should be entered
+ as a space-separated list.
+ .
+ The interfaces will be automatically detected if this field is left
+ blank.
+Description-ca.UTF-8: Interfícies de xarxa en las quals cal que el servidor de DHCP escolti:
+ Especifiqueu el/els nom/s de les interfícies de xarxa en les que el servidor de DHCP hauria d'escoltar a la recerca de peticions de DHCP. Feu servir una llista separada per espais si voleu especificar més d'un nom d'interfície.
+ .
+ Se detectaran les interfícies de forma automàtica si deixau aquest camp en blanc.
+Description-cs.UTF-8: Síťová rozhraní, na kterých má DHCP server naslouchat:
+ Zadejte prosím, na kterých síťových rozhraních má DHCP server naslouchat DHCP požadavkům. Zadáváte-li více rozhraní, oddělte je mezerou.
+ .
+ Ponecháte-li toto políčko prázdné, rozhraní budou automaticky rozpoznána.
+Description-da.UTF-8: Netværksgrænseflader hvorpå DHCP-serveren skal lytte:
+ Angiv venligst på hvilke netværksgrænseflader DHCP-serveren skal lytte efter DHCP-forespørgsler. Flere grænsefladenavne skal indtastes som en mellemrumsadskilt liste.
+ .
+ Grænsefladerne vil automatisk blive registreret, hvis dette felt efterlades tomt.
+Description-de.UTF-8: Netzwerkschnittstelle, an der der DHCP-Server auf Anfragen warten soll:
+ Bitte geben Sie die Netzwerkschnittstelle(n) ein, an der bzw. denen der DHCP-Server auf DHCP-Anfragen warten soll. Mehrere Schnittstellennamen sollten in einer Liste, durch Leerzeichen getrennt, eingegeben werden.
+ .
+ Die Schnittstellen werden automatisch erkannt, falls hier nichts eingegeben wird.
+Description-es.UTF-8: Interfaces de red en las que debe escuchar el servidor de DHCP:
+ Introduzca el o los nombres de las interfaces de red en las que el servidor de DHCP debería escuchar en busca de solicitudes de DHCP. Utilice una lista separada por espacios si quiere especificar múltiples nombres de interfaz.
+ .
+ Se detectarán las interfaces de forma automática si deja este campo en blanco.
+Description-eu.UTF-8: DHCP zerbitzariak entzun behar dituen sare interfazeak:
+ Mesedez ezarri DHCP zerbitzariak zein interfazeetan DHCP eskariak entzun behar dituen . Interfaze anitz ezartzeko zuriunez bereiziriko zerrenda batetan idatzi itzazu.
+ .
+ Interfazeak automatikoki antzemango dira eremu hau zurian utziaz gero.
+Description-fi.UTF-8: Verkkoliitynnät, joita DHCP-palvelimen tulisi kuunnella:
+ Anna verkkoliitynnät, joista DHCP-palvelimen tulisi kuunnella DHCP-pyyntöjä. Useampia liityntöjä voidaan antaa välilyönnein eroteltuna.
+ .
+ Liitynnät etsitään automaattisesti, jos tämä kenttä jätetään tyhjäksi.
+Description-fr.UTF-8: Interfaces réseau où le serveur DHCP sera à l'écoute :
+ Veuillez indiquer, séparés par des espaces, les noms des interfaces réseaux que le relais DHCP doit tenter de configurer. 
+ .
+ Les interfaces seront automatiquement détectées si ce champ est vide.
+Description-gl.UTF-8: Interfaces de rede nos que o servidor DHCP ten que escoitar:
+ Indique en que interface(s) de rede debe escoitar por peticións DHCP o servidor DHCP. Pódense introducir varios nomes de interface separándoos mediante espazos.
+ .
+ Hanse detectar as interfaces automaticamente se deixa este campo baleiro.
+Description-it.UTF-8: Interfacce di rete sulle quali il server DHCP deve stare in ascolto:
+ Specificare su quali interfacce di rete il server DHCP deve stare in ascolto per le richieste DHCP. Più interfacce di rete devono essere inserite come un elenco separato da spazi.
+ .
+ Le interfacce saranno rilevate automaticamente se questo campo è lasciato vuoto.
+Description-ja.UTF-8: DHCP サーバが待ち受ける必要のあるネットワークインターフェイス:
+ どのネットワークインターフェイスで DHCP サーバは DHCP リクエストを待ち受けるのかを指定してください。複数のインターフェイス名は空白で区切ったリストで入力する必要があります。
+ .
+ 値が入力されなかった場合、インターフェイスは自動的に検出されます。
+Description-ko.UTF-8: DHCP 서버가 대기하고 있을 네트워크 인터페이스 목록:
+ DHCP 서버가 DHCP 요청에 대기하고 있늘 네트워크 인터페이스의 목록을 지정해 주십시오. 여러 개를 입력하실 경우에는 빈칸으로 연결하십시오.
+ .
+ 이 항목을 비워둘 경우에는 인터페이스를 자동으로 감지합니다.
+Description-nl.UTF-8: Netwerkinterface(s) waarop de DHCP-server moet luisteren:
+ Geef aan welke netwerkinterfaces de DHCP-server moet uitluisteren voor binnenkomende DHCP-verzoeken (bijvoorbeeld: "eth0"). Als u meerdere namen van interfaces opgeeft, dienen deze te worden gescheiden door spaties.
+ .
+ Als dit veld leeg wordt gelaten, zullen de interfaces automatisch gedetecteerd worden.
+Description-pl.UTF-8: Interfejsy sieciowe na których powinien nasłuchiwać serwer DHCP:
+ Proszę podać interfejs(y) sieciowe, na których serwer DHCP powinien nasłuchiwać żądań DHCP. Można podać kilka nazw, oddzielając je spacjami.
+ .
+ Interfejsy zostaną wykryte automatycznie, jeśli to pole pozostanie puste.
+Description-pt.UTF-8: Interfaces de rede nas quais o servidor DHCP deve ouvir:
+ Por favor especifique em que interface(s) de rede deve o servidor de DHCP escutar por pedidos DHCP. Vários nomes de interfaces devem ser introduzidos como uma lista separada por espaços.
+ .
+ As interfaces vão ser detectadas automaticamente se este campo for deixado em branco.
+Description-pt_BR.UTF-8: Interfaces de rede nas quais o servidor DHCP deverá escutar:
+ Por favor, especifique em qual(is) interface(s) de rede o servidor DHCP deverá escutar requisições DHCP. Múltiplos nomes de interface podem ser informados usando uma lista separada por espaços.
+ .
+ As interfaces serão automaticamente detectadas se este campo for deixado em branco.
+Description-ru.UTF-8: Сетевые интерфейсы, на которых будет работать DHCP-сервер:
+ Укажите сетевой(ые) интерфейс(ы), с которых сервер DHCP должен принимать DHCP-запросы. Можно указать несколько интерфейсов через пробел.
+ .
+ Если это поле оставить пустым, интерфейсы будут определены автоматически.
+Description-sk.UTF-8: Sieťové rozhrania, na ktorých má DHCP server počúvať:
+ Prosím, uveďte na ktorých sieťových rozhraniach by mal DHCP server počúvať požiadavky DHCP. Viaceré názvy rozhraní sa zadávajú ako zoznam oddelený medzerami.
+ .
+ Ak pole necháte nevyplnené, rozhrania budú detegované automaticky.
+Description-sv.UTF-8: Nätverksgränssnitt där DHCP-servern skall lyssna:
+ Vänligen ange vilket/vilka nätverksgränssnitt som DHCP-vidarebefordringsdemonen skall lyssna efter förfrågningar på. Om flera gränssnitt anges skall dessa vara separerade med mellanslag.
+ .
+ Nätverksgränssnitten kommer automatiskt identifieras om detta fält lämnas tomt.
+Description-ta.UTF-8: டிஹெச்சிபி(DHCP) சேவயகம் செவி சாய்க்க வலையமைப்பு இடைமுகங்கள்:
+ டிஹெச்சிபி(DHCP) சேவயகம் எந்த வலையமைப்பு இடைமுகங்களுக்கு செவி சாய்க்க வேண்டுமென குறிப்பிடவும். நீங்கள் பல இடைமுக பெயர்களை இடைவெளியால் பிரித்த பட்டியலாக குறிப்பிடலாம்.
+ .
+ இந்த புலம் வெற்றாக விடப்பட்டால் இடைமுகங்கள் தானியங்கியாக கண்டுபிடிக்கப்படும்.
+Description-tr.UTF-8: DHCP sunucusunun dinleyeceği ağ arayüzleri:
+ Lütfen DHCP sunucusunun DHCP isteklerini dinlemesi gereken ağ arayüzlerini belirtin. Birden fazla arayüz ismi var ise bunlar boşluklarla ayrılmış bir liste halinde girilmelidir.
+ .
+ Bu alan boş bırakılırsa arayüzler otomatik olarak bulunacaktır.
+Description-vi.UTF-8: Giao diện mạng nào trên đó trình phục vụ DHCP nên lắng nghe:
+ Hãy ghi rõ trên những giao diện mạng nào trình phục vụ DHCP nên lắng nghe yêu cầu DHCP. Nhiều tên giao diện nên được nhập trong danh sách định giới bằng dấu cách.
+ .
+ Bỏ trống trường này thì tự động phát hiện giao diện.

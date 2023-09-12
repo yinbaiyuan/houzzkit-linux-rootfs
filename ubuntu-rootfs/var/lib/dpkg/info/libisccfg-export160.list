@@ -1,0 +1,11 @@
+/.
+/lib
+/lib/aarch64-linux-gnu
+/lib/aarch64-linux-gnu/libisccfg-export.so.160.1.2
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libisccfg-export160
+/usr/share/doc/libisccfg-export160/copyright
+/lib/aarch64-linux-gnu/libisccfg-export.so.160
+/usr/share/doc/libisccfg-export160/changelog.Debian.gz

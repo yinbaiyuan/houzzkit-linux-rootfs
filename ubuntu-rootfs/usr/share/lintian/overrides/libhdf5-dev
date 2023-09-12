@@ -1,0 +1,2 @@
+# This is wanted
+libhdf5-dev: symlink-is-self-recursive usr/lib/*/hdf5/serial/lib .

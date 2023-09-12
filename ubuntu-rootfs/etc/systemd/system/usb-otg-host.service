@@ -1,0 +1,12 @@
+[Unit]
+Description=Auto change USB mode to host , when this service is started
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/etc/systemd/system/auto-host-otg.sh host
+ExecStop=/etc/systemd/system/auto-host-otg.sh otg
+
+[Install]
+WantedBy=multi-user.target
+

@@ -1,0 +1,1 @@
+libhdf5-100: package-name-doesnt-match-sonames libhdf5-serial100 libhdf5-serial-fortran100 libhdf5-serial-hl100 libhdf5-serialhl-fortran100

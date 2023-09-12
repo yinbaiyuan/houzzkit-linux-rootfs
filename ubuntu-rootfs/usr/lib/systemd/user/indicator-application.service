@@ -1,0 +1,8 @@
+[Unit]
+Description=Indicator Application Service
+PartOf=graphical-session.target
+After=indicators-pre.target
+
+[Service]
+ExecStart=/usr/lib/aarch64-linux-gnu/indicator-application/indicator-application-service
+Restart=on-failure

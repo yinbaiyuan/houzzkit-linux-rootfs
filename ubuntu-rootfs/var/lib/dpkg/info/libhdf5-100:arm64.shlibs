@@ -1,0 +1,5 @@
+libhdf5_serial_fortran 100 libhdf5-100
+libhdf5_serial 100 libhdf5-100
+libhdf5_serial_hl 100 libhdf5-100
+libhdf5_serialhl_fortran 100 libhdf5-100
+

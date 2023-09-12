@@ -1,0 +1,4 @@
+# A false positive. The lintian was mistaken when saw the following line:
+# "following Attribution Information: (a) a copyright notice including the name"
+
+libofa0: spelling-error-in-copyright a a (duplicate word) a

@@ -1,0 +1,11 @@
+[Unit]
+Description=Setup rpdzkj platform environment
+Before=lightdm.service
+After=resize-helper.service
+
+[Service]
+Type=oneshot
+ExecStart=/etc/init.d/rpdzkj.sh
+
+[Install]
+WantedBy=multi-user.target

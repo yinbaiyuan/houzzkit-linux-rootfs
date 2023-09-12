@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" != "upgrade" ]
+then
+    update-alternatives --remove libblas.so.3-aarch64-linux-gnu \
+                        /usr/lib/aarch64-linux-gnu/blas/libblas.so.3
+fi
+
+
+
+exit 0

@@ -1,0 +1,9 @@
+26337619a21a97e606137521ec7ac3a5  usr/bin/h5c++
+4967f1a58598908f97eb7ede8408f7c0  usr/bin/h5cc
+6219c62832193a2b99005f65de50dc21  usr/bin/h5fc
+8d87f292b133a439189390f1195e7f1e  usr/share/doc/hdf5-helpers/changelog.Debian.gz
+991c1bcaa9b3097184de712a4629f8bf  usr/share/doc/hdf5-helpers/copyright
+c4a50f31ee23e5d257ce00a9d768480c  usr/share/lintian/overrides/hdf5-helpers
+c9431b668e1f4a21d9019ae47ffb3a86  usr/share/man/man1/h5c++.1.gz
+8f7f9916bd83096ed9de4afe673f9167  usr/share/man/man1/h5cc.1.gz
+8b660ffc97ed54758fe665673aba0c8c  usr/share/man/man1/h5fc.1.gz

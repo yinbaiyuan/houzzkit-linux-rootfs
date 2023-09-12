@@ -1,0 +1,26 @@
+#! /bin/sh
+
+set -e
+
+if [ "$1" = configure ]; then
+  if [ -d /usr/include/python3.7 ] && [ ! -h /usr/include/python3.7 ]; then
+    if rmdir /usr/include/python3.7 2> /dev/null; then
+      ln -sf python3.7mu /usr/include/python3.7
+    else
+      echo >&2 "WARNING: non-empty directory on upgrade: /usr/include/python3.7"
+      ls -l /usr/include/python3.7
+    fi
+  fi
+  if [ -d /usr/lib/python3.7/config ] && [ ! -h /usr/lib/python3.7/config ]; then
+    if rmdir /usr/lib/python3.7/config 2> /dev/null; then
+      ln -sf config-3.7mu /usr/lib/python3.7/config
+    else
+      echo >&2 "WARNING: non-empty directory on upgrade: /usr/lib/python3.7/config"
+      ls -l /usr/lib/python3.7/config
+    fi
+  fi
+fi
+
+
+
+exit 0

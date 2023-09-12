@@ -1,0 +1,21 @@
+[Unit]
+Description=netfilter persistent configuration
+DefaultDependencies=no
+
+Before=network-pre.target
+Wants=network-pre.target
+
+Wants=systemd-modules-load.service local-fs.target
+After=systemd-modules-load.service local-fs.target
+
+Conflicts=shutdown.target
+Before=shutdown.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/sbin/netfilter-persistent start
+ExecStop=/usr/sbin/netfilter-persistent stop
+
+[Install]
+WantedBy=multi-user.target

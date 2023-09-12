@@ -1,0 +1,4 @@
+e921a9a8f0c626f1e8ef6f1582ab3d31  usr/lib/aarch64-linux-gnu/libhdf5_cpp.so.100.0.0
+1a91c9e3fb4e65637422ded5d3d0e16a  usr/lib/aarch64-linux-gnu/libhdf5_hl_cpp.so.100.0.0
+991c1bcaa9b3097184de712a4629f8bf  usr/share/doc/libhdf5-cpp-100/copyright
+45135307b94dd499c7de38ed62a8daf4  usr/share/lintian/overrides/libhdf5-cpp-100

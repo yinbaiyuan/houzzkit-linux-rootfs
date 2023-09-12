@@ -1,0 +1,26 @@
+lease {
+  interface "eth0";
+  fixed-address 192.168.1.188;
+  option subnet-mask 255.255.255.0;
+  option dhcp-lease-time 6856;
+  option routers 192.168.1.1;
+  option dhcp-message-type 5;
+  option dhcp-server-identifier 192.168.1.1;
+  option domain-name-servers 192.168.1.1;
+  renew 6 2021/07/17 07:39:55;
+  rebind 6 2021/07/17 08:36:02;
+  expire 6 2021/07/17 08:50:19;
+}
+lease {
+  interface "eth0";
+  fixed-address 192.168.1.188;
+  option subnet-mask 255.255.255.0;
+  option routers 192.168.1.1;
+  option dhcp-lease-time 6741;
+  option dhcp-message-type 5;
+  option domain-name-servers 192.168.1.1;
+  option dhcp-server-identifier 192.168.1.1;
+  renew 6 2021/07/17 07:46:30;
+  rebind 6 2021/07/17 08:36:15;
+  expire 6 2021/07/17 08:50:18;
+}

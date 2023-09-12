@@ -1,0 +1,13 @@
+[Unit]
+Description=rpdzkj bt firmware process
+Before=blueman-mechanism.service
+After=rc-local.service
+
+
+[Service]
+Type=forking
+ExecStart=/etc/init.d/rkwifibt.sh
+
+
+[Install]
+WantedBy=multi-user.target

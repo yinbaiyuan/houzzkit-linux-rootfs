@@ -1,0 +1,136 @@
+
+Template: iptables-persistent/autosave_v4
+Type: boolean
+Default: true
+Description: Save current IPv4 rules?
+ Current iptables rules can be saved to the configuration
+ file /etc/iptables/rules.v4. These rules will then be loaded automatically
+ during system startup.
+ .
+ Rules are only saved automatically during package installation. See the
+ manual page of iptables-save(8) for instructions on keeping the rules file
+ up-to-date.
+Description-cs.UTF-8: Uložit stávající pravidla IPv4?
+ Stávající pravidla pro iptables se mohou uložit do konfiguračního souboru /etc/iptables/rules.v4. Tato pravidla pak budou během spouštění systému automaticky nahrána.
+ .
+ Pravidla se ukládají automaticky pouze při instalaci balíčku. Pro informace, jak udržet soubor s pravidly aktuální, se podívejte do manuálové stránky iptables-save(8).
+Description-da.UTF-8: Gem aktuelle IPv4-regler?
+ Aktuelle iptables-regler kan gemmes til konfigurationsfilen /etc/iptables/rules.v4. Disse regler vil så automatisk blive indlæst, når systemet starter op.
+ .
+ Regler gemmes kun automatisk under pakkeinstallation. Se manualsiden for iptables-save(8) for instruktioner om hvordan regelfilerne holdes ajour.
+Description-de.UTF-8: Aktuelle IPv4-Regeln speichern?
+ Aktuelle Iptables-Regeln können in der Konfigurationsdatei /etc/iptables/rules.v4 gespeichert werden. Diese Regeln werden dann beim Systemstart automatisch geladen.
+ .
+ Regeln werden nur automatisch während der Paketinstallation gespeichert. Lesen Sie die Handbuchseite von iptables-save(8), um zu erfahren, wie die Regeln aktuell gehalten werden können.
+Description-es.UTF-8: ¿Desea guardar las reglas de IPv4 actuales?
+ Las reglas actuales de iptables se pueden guardar en el archivo de configuración «/etc/iptables/rules.v4». Estas reglas se cargarán automáticamente durante el inicio del sistema.
+ .
+ Las reglas sólo se guardan automáticamente durante la instalación del paquete. Puede consultar las instrucciones para mantener el archivo de reglas actualizado en la página de manual de «iptables-save(8)».
+Description-fr.UTF-8: Faut-il enregistrer les règles IPv4 actuelles ?
+ Les règles actuelles peuvent être enregistrées dans le fichier de configuration « /etc/iptables/rules.v4 ». Ces règles seront chargées au prochain redémarrage de la machine.
+ .
+ Les règles ne sont enregistrées automatiquement que lors de l'installation du paquet. Veuillez consulter la page de manuel de iptables-save(8) pour connaître la manière de garder à jour le fichier des règles.
+Description-it.UTF-8: Salvare le regole IPv4 attuali?
+ Le regole iptables attuali possono essere salvate nel file di configurazione «/etc/iptables/rules.v4». Queste regole verranno poi caricate automaticamente all'avvio del sistema.
+ .
+ Le regole vengono salvate automaticamente solo durante l'installazione del pacchetto. Per informazioni su come mantenere aggiornato il file delle regole vedere le pagine del manuale di iptables-save(8).
+Description-ja.UTF-8: 現在の IPv4 ルールを保存しますか?
+ 現在の iptables のルールは、設定ファイル /etc/iptables/rules.v4 に保存できます。このルールは、システムの起動時に自動的に読み込まれるようになります。
+ .
+ ルールは、パッケージのインストール時にのみ自動的に保存されます。ルールのファイルを最新に保つには、iptables-save(8) のマニュアルページを参照してください。
+Description-nl.UTF-8: Huidige IPv4-regels opslaan?
+ De huidige iptables-regels kunnen opgeslagen worden in het configuratiebestand /etc/iptables/rules.v4. Deze regels worden dan automatisch geladen tijdens de systeemstart.
+ .
+ De regels worden alleen automatisch opgeslagen tijdens de pakketinstallatie. Zie de man-pagina van iptables-save(8) voor instructies over het bijgewerkt houden van het regelsbestand.
+Description-pl.UTF-8: Zachować bieżące reguły IPv4?
+ Bieżące reguły iptables mogą zostać zachowane do pliku konfiguracyjnego /etc/iptables/rules.v4. Będą one wówczas ładowane automatycznie podczas uruchamiania systemu.
+ .
+ Reguły są zachowywane automatycznie jedynie podczas instalacji pakietu. Proszę zapoznać się ze stroną podręcznika iptables-save(8), aby dowiedzieć się jak zachowywać plik reguł w stanie zaktualizowanym.
+Description-pt.UTF-8: Guardar as regras IPv4 actuais?
+ As regras iptables actuais podem ser guardadas no ficheiro de configuração /etc/iptables/rules.v4. Estas regras serão carregadas automaticamente durante o arranque do sistema.
+ .
+ As regras apenas são guardadas automaticamente durante a instalação do pacote. Veja o manual do iptables-save(8) para instruções em manter o ficheiro de regras actualizado.
+Description-pt_BR.UTF-8: Salvar as regras IPv4 atuais?
+ As regras atuais do iptables podem ser salvas no arquivo de configuração /etc/iptables/rules.v4. Essas regras serão carregadas automaticamente durante a inicialização do sistema.
+ .
+ As regras são salvas automaticamente somente durante a instalação do pacote. Veja a página de manual do iptables-save(8) para instruções sobre como manter o arquivo de regras atualizado.
+Description-ru.UTF-8: Сохранить имеющиеся правила IPv4?
+ Текущие правила iptables можно сохранить в файл настройки /etc/iptables/rules.v4. Данные правила будут загружаться автоматически при запуске операционной системы.
+ .
+ Правила сохраняются автоматически только при установке пакета. О том, как обновлять файл правил, смотрите в справочной странице iptables-save(8).
+Description-sk.UTF-8: Uložiť aktuálne pravidlá IPv4?
+ Aktuálne pravidlá iptables môžu byť uložené do konfiguračného súboru /etc/iptables/rules.v4. Tieto pravidlá budú potom automaticky načítané pri štarte systému.
+ .
+ Pravidlá sú automaticky uložené len pri inštalácii balíka. Podrobnosti o tom, ako zachovať súbor s pravidlami v aktuálnom stave, nájdete v manuálovej stránke iptables-save(8).
+Description-sv.UTF-8: Spara aktuella IPv4-regler?
+ Aktuella iptables-regler kan sparas i inställningsfilen /etc/iptables/rules.v4. Dessa regler kommer då att läsas in automatiskt vid systemets uppstart.
+ .
+ Reglerna sparas automatiskt vid paketinstallationen. Instruktioner för att hålla regelfilen aktuellt finns i manualsidan för iptables-save(8).
+
+Template: iptables-persistent/autosave_v6
+Type: boolean
+Default: true
+Description: Save current IPv6 rules?
+ Current iptables rules can be saved to the configuration
+ file /etc/iptables/rules.v6. These rules will then be loaded automatically
+ during system startup.
+ .
+ Rules are only saved automatically during package installation. See the
+ manual page of ip6tables-save(8) for instructions on keeping the rules file
+ up-to-date.
+Description-cs.UTF-8: Uložit stávající pravidla IPv6?
+ Stávající pravidla pro iptables se mohou uložit do konfiguračního souboru /etc/iptables/rules.v6. Tato pravidla pak budou během spouštění systému automaticky nahrána.
+ .
+ Pravidla se ukládají automaticky pouze při instalaci balíčku. Pro informace, jak udržet soubor s pravidly aktuální, se podívejte do manuálové stránky ip6tables-save(8).
+Description-da.UTF-8: Gem aktuelle IPv6-regler?
+ Aktuelle iptables-regler kan gemmes til konfigurationsfilen /etc/iptables/rules.v6. Disse regler vil så automatisk blive indlæst, når systemet starter op.
+ .
+ Regler gemmes kun automatisk under pakkeinstallation. Se manualsiden for ip6tables-save(8) for instruktioner om hvordan regelfilerne holdes ajour.
+Description-de.UTF-8: Aktuelle IPv6-Regeln speichern?
+ Aktuelle Iptables-Regeln können in der Konfigurationsdatei /etc/iptables/rules.v6 gespeichert werden. Diese Regeln werden dann beim Systemstart automatisch geladen.
+ .
+ Regeln werden nur automatisch während der Paketinstallation gespeichert. Lesen Sie die Handbuchseite von ip6tables-save(8), um zu erfahren, wie die Regeln aktuell gehalten werden können.
+Description-es.UTF-8: ¿Desea guardar las reglas de IPv6 actuales?
+ Las reglas actuales de iptables se pueden guardar en el archivo de configuración «/etc/iptables/rules.v6». Estas reglas se cargarán automáticamente durante el inicio del sistema.
+ .
+ Las reglas sólo se guardan automáticamente durante la instalación del paquete. Puede consultar las instrucciones para mantener el archivo de reglas actualizado en la página de manual de «ip6tables-save(8)».
+Description-fr.UTF-8: Faut-il enregistrer les règles IPv6 actuelles ?
+ Les règles actuelles peuvent être enregistrées dans le fichier de configuration « /etc/iptables/rules.v6 ». Ces règles seront chargées au prochain redémarrage de la machine.
+ .
+ Les règles ne sont enregistrées automatiquement que lors de l'installation du paquet. Veuillez consulter la page de manuel de ip6tables-save(8) pour connaître la manière de garder à jour le fichier des règles.
+Description-it.UTF-8: Salvare le regole IPv6 attuali?
+ Le regole iptables attuali possono essere salvate nel file di configurazione «/etc/iptables/rules.v6». Queste regole verranno poi caricate automaticamente all'avvio del sistema.
+ .
+ Le regole vengono salvate automaticamente solo durante l'installazione del pacchetto. Per informazioni su come mantenere aggiornato il file delle regole vedere le pagine del manuale di ip6tables-save(8).
+Description-ja.UTF-8: 現在の IPv6 ルールを保存しますか?
+ 現在の iptables のルールは、設定ファイル /etc/iptables/rules.v6 に保存できます。このルールは、システムの起動時に自動的に読み込まれるようになります。
+ .
+ ルールは、パッケージのインストール時にのみ自動的に保存されます。ルールのファイルを最新に保つには、ip6tables-save(8) のマニュアルページを参照してください。
+Description-nl.UTF-8: Huidige IPv6-regels opslaan?
+ De huidige iptables-regels kunnen opgeslagen worden in het configuratiebestand /etc/iptables/rules.v6. Deze regels worden dan automatisch geladen tijdens de systeemstart.
+ .
+ De regels worden alleen automatisch opgeslagen tijdens de pakketinstallatie. Zie de man-pagina van ip6tables-save(8) voor instructies over het bijgewerkt houden van het regelsbestand.
+Description-pl.UTF-8: Zachować bieżące reguły IPv6?
+ Bieżące reguły iptables mogą zostać zachowane do pliku konfiguracyjnego /etc/iptables/rules.v6. Będą one wówczas ładowane automatycznie podczas uruchamiania systemu.
+ .
+ Reguły są zachowywane automatycznie jedynie podczas instalacji pakietu. Proszę zapoznać się ze stroną podręcznika ip6tables-save(8), aby dowiedzieć się jak zachowywać plik reguł w stanie zaktualizowanym.
+Description-pt.UTF-8: Guardar as regras IPv6 actuais?
+ As regras iptables actuais podem ser guardadas no ficheiro de configuração /etc/iptables/rules.v6. Estas regras serão carregadas automaticamente durante o arranque do sistema.
+ .
+ As regras apenas são guardadas automaticamente durante a instalação do pacote. Veja o manual do ip6tables-save(8) para instruções em manter o ficheiro de regras actualizado.
+Description-pt_BR.UTF-8: Salvar as regras IPv6 atuais?
+ As regras atuais do iptables podem ser salvas no arquivo de configuração /etc/iptables/rules.v6. Essas regras serão carregadas automaticamente durante a inicialização do sistema.
+ .
+ As regras são salvas automaticamente somente durante a instalação do pacote. Veja a página de manual do ip6tables-save(8) para instruções sobre como manter o arquivo de regras atualizado.
+Description-ru.UTF-8: Сохранить имеющиеся правила IPv6?
+ Текущие правила iptables можно сохранить в файл настройки /etc/iptables/rules.v4. Данные правила будут загружаться автоматически при запуске операционной системы.
+ .
+ Правила сохраняются автоматически только при установке пакета. О том, как обновлять файл правил, смотрите в справочной странице iptables6-save(8).
+Description-sk.UTF-8: Uložiť aktuálne pravidlá IPv6?
+ Aktuálne pravidlá iptables môžu byť uložené do konfiguračného súboru /etc/iptables/rules.v6. Tieto pravidlá budú potom automaticky načítané pri štarte systému.
+ .
+ Pravidlá sú automaticky uložené len pri inštalácii balíka. Podrobnosti o tom, ako zachovať súbor s pravidlami v aktuálnom stave, nájdete v manuálovej stránke ip6tables-save(8).
+Description-sv.UTF-8: Spara aktuella IPv6-regler?
+ Aktuella iptables-regler kan sparas i inställningsfilen /etc/iptables/rules.v6. Dessa regler kommer då att läsas in automatiskt vid systemets uppstart.
+ .
+ Reglerna sparas automatiskt vid paketinstallationen. Instruktioner för att hålla regelfilen aktuellt finns i manualsidan för ip6tables-save(8).

@@ -1,0 +1,6 @@
+Name: HDF5
+Description: Hierarchical Data Format 5 (HDF5)
+Version: 1.8.13
+Requires:
+Cflags: -I/usr/include/hdf5/serial
+Libs: -L/usr/lib/aarch64-linux-gnu/hdf5/serial -lhdf5

@@ -1,0 +1,197 @@
+#!/bin/sh
+#
+# Inspiration stolen from the fetchmail* packages. Thanks Henrique!
+#
+#
+
+set -e
+
+case "$1" in
+	configure)
+		# create system dhcpd user and group
+		adduser --system --quiet --no-create-home --home /var/run --group dhcpd
+		# create ddns keys directory
+		if [ ! -e /etc/dhcp/ddns-keys/ ]; then
+			mkdir -m 750 /etc/dhcp/ddns-keys/
+			chown root:dhcpd /etc/dhcp/ddns-keys/
+		fi
+		;;
+
+	abort-upgrade|abort-remove|abort-deconfigure)
+		exit 0
+		;;
+
+	*)
+		echo "postinst called with unknown argument \`$1'" >&2
+		exit 0
+		;;
+esac
+
+# Handle debconf
+. /usr/share/debconf/confmodule
+
+INITCONFFILE="/etc/default/isc-dhcp-server"
+
+# We generate several files during the postinst, and we don't want
+#	them to be readable only by root.
+umask 022
+
+# Generate configuration file if it does not exist, using default values.
+[ -r "${INITCONFFILE}" ] || {
+	echo Generating ${INITCONFFILE}... >&2
+	cat >${INITCONFFILE} <<'EOFMAGICNUMBER1234'
+# Defaults for isc-dhcp-server (sourced by /etc/init.d/isc-dhcp-server)
+
+# Path to dhcpd's config file (default: /etc/dhcp/dhcpd.conf).
+#DHCPDv4_CONF=/etc/dhcp/dhcpd.conf
+#DHCPDv6_CONF=/etc/dhcp/dhcpd6.conf
+
+# Path to dhcpd's PID file (default: /var/run/dhcpd.pid).
+#DHCPDv4_PID=/var/run/dhcpd.pid
+#DHCPDv6_PID=/var/run/dhcpd6.pid
+
+# Additional options to start dhcpd with.
+#	Don't use options -cf or -pf here; use DHCPD_CONF/ DHCPD_PID instead
+#OPTIONS=""
+
+# On what interfaces should the DHCP server (dhcpd) serve DHCP requests?
+#	Separate multiple interfaces with spaces, e.g. "eth0 eth1".
+INTERFACESv4=""
+INTERFACESv6=""
+EOFMAGICNUMBER1234
+}
+
+# ------------------------- Debconf questions start ---------------------
+
+db_get isc-dhcp-server/interfaces || true
+INTERFACESv4="${RET}"
+
+if [ -n "$INTERFACESv4" ]; then
+    TMPFILE="$(mktemp -q ${INITCONFFILE}.new.XXXXXX)"
+    sed -e "s,^[[:space:]]*INTERFACESv4[[:space:]]*=.*,INTERFACESv4=\"${INTERFACESv4}\"," \
+		<${INITCONFFILE} >${TMPFILE}
+    cp ${TMPFILE} ${INITCONFFILE}
+    rm ${TMPFILE}
+fi
+
+# ------------------------- Debconf questions end ---------------------
+db_stop
+
+test ! -x /sbin/restorecon || restorecon /var/lib/dhcp/dhcpd.leases
+
+# Automatically added by dh_apparmor/2.12-4ubuntu5.1
+aa_is_enabled() {
+   if command aa-enabled >/dev/null 2>&1; then
+      # apparmor >= 2.10.95-2
+      aa-enabled --quiet 2>/dev/null
+   else
+      # apparmor << 2.10.95-2
+      # (This should be removed once Debian Stretch and Ubuntu 18.04 are out.)
+      rc=0
+      aa-status --enabled 2>/dev/null || rc=$?
+      [ "$rc" = 0 ] || [ "$rc" = 2 ]
+   fi
+}
+
+if [ "$1" = "configure" ]; then
+    APP_PROFILE="/etc/apparmor.d/usr.sbin.dhcpd"
+    if [ -f "$APP_PROFILE" ]; then
+        # Add the local/ include
+        LOCAL_APP_PROFILE="/etc/apparmor.d/local/usr.sbin.dhcpd"
+
+        test -e "$LOCAL_APP_PROFILE" || {
+            mkdir -p `dirname "$LOCAL_APP_PROFILE"`
+            install --mode 644 /dev/null "$LOCAL_APP_PROFILE"
+        }
+
+        # Reload the profile, including any abstraction updates
+        if aa_is_enabled; then
+            apparmor_parser -r -T -W "$APP_PROFILE" || true
+        fi
+    fi
+fi
+# End automatically added section
+# Automatically added by dh_systemd_enable/11.1.6ubuntu1
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-deconfigure" ] || [ "$1" = "abort-remove" ] ; then
+	# This will only remove masks created by d-s-h on package removal.
+	deb-systemd-helper unmask 'isc-dhcp-server.service' >/dev/null || true
+
+	# was-enabled defaults to true, so new installations run enable.
+	if deb-systemd-helper --quiet was-enabled 'isc-dhcp-server.service'; then
+		# Enables the unit on first installation, creates new
+		# symlinks on upgrades if the unit file has changed.
+		deb-systemd-helper enable 'isc-dhcp-server.service' >/dev/null || true
+	else
+		# Update the statefile to add new symlinks (if any), which need to be
+		# cleaned up on purge. Also remove old symlinks.
+		deb-systemd-helper update-state 'isc-dhcp-server.service' >/dev/null || true
+	fi
+fi
+# End automatically added section
+# Automatically added by dh_systemd_enable/11.1.6ubuntu1
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-deconfigure" ] || [ "$1" = "abort-remove" ] ; then
+	# This will only remove masks created by d-s-h on package removal.
+	deb-systemd-helper unmask 'isc-dhcp-server.service' >/dev/null || true
+
+	# was-enabled defaults to true, so new installations run enable.
+	if deb-systemd-helper --quiet was-enabled 'isc-dhcp-server.service'; then
+		# Enables the unit on first installation, creates new
+		# symlinks on upgrades if the unit file has changed.
+		deb-systemd-helper enable 'isc-dhcp-server.service' >/dev/null || true
+	else
+		# Update the statefile to add new symlinks (if any), which need to be
+		# cleaned up on purge. Also remove old symlinks.
+		deb-systemd-helper update-state 'isc-dhcp-server.service' >/dev/null || true
+	fi
+fi
+# End automatically added section
+# Automatically added by dh_systemd_enable/11.1.6ubuntu1
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-deconfigure" ] || [ "$1" = "abort-remove" ] ; then
+	# This will only remove masks created by d-s-h on package removal.
+	deb-systemd-helper unmask 'isc-dhcp-server6.service' >/dev/null || true
+
+	# was-enabled defaults to true, so new installations run enable.
+	if deb-systemd-helper --quiet was-enabled 'isc-dhcp-server6.service'; then
+		# Enables the unit on first installation, creates new
+		# symlinks on upgrades if the unit file has changed.
+		deb-systemd-helper enable 'isc-dhcp-server6.service' >/dev/null || true
+	else
+		# Update the statefile to add new symlinks (if any), which need to be
+		# cleaned up on purge. Also remove old symlinks.
+		deb-systemd-helper update-state 'isc-dhcp-server6.service' >/dev/null || true
+	fi
+fi
+# End automatically added section
+# Automatically added by dh_systemd_start/11.1.6ubuntu1
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-deconfigure" ] || [ "$1" = "abort-remove" ] ; then
+	if [ -d /run/systemd/system ]; then
+		systemctl --system daemon-reload >/dev/null || true
+		deb-systemd-invoke start 'isc-dhcp-server6.service' >/dev/null || true
+	fi
+fi
+# End automatically added section
+# Automatically added by dh_installdeb/11.1.6ubuntu1
+dpkg-maintscript-helper rm_conffile /etc/init/isc-dhcp-server6.conf 4.3.5-3ubuntu1~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installdeb/11.1.6ubuntu1
+dpkg-maintscript-helper rm_conffile /etc/init/isc-dhcp-server.conf 4.3.5-3ubuntu1~ -- "$@"
+# End automatically added section
+# Automatically added by dh_installinit/11.1.6ubuntu1
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-deconfigure" ] || [ "$1" = "abort-remove" ] ; then
+	if [ -x "/etc/init.d/isc-dhcp-server" ]; then
+		update-rc.d isc-dhcp-server defaults >/dev/null
+		invoke-rc.d isc-dhcp-server start || exit 1
+	fi
+fi
+# End automatically added section
+# Automatically added by dh_installinit/11.1.6ubuntu1
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-deconfigure" ] || [ "$1" = "abort-remove" ] ; then
+	if [ -x "/etc/init.d/isc-dhcp-server6" ]; then
+		update-rc.d isc-dhcp-server6 defaults >/dev/null
+		invoke-rc.d isc-dhcp-server6 start || exit 1
+	fi
+fi
+# End automatically added section
+
+
+exit 0

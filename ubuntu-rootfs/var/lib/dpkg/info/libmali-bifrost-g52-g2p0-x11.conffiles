@@ -1,0 +1,2 @@
+/etc/OpenCL/vendors/mali.icd
+/etc/ld.so.conf.d/00-aarch64-mali.conf

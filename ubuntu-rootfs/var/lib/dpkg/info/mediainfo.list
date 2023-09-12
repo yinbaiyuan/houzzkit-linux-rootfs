@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/bin/mediainfo
+/usr/share
+/usr/share/doc
+/usr/share/doc/mediainfo
+/usr/share/doc/mediainfo/README
+/usr/share/doc/mediainfo/changelog.Debian.gz
+/usr/share/doc/mediainfo/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/mediainfo.1.gz

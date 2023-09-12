@@ -1,0 +1,9 @@
+libdir=/usr/lib/aarch64-linux-gnu
+includedir=/usr/include/aarch64-linux-gnu
+
+Name: LAPACK
+Description: FORTRAN reference implementation of LAPACK Linear Algebra PACKage
+Version: 3.7.1
+URL: http://www.netlib.org/lapack/
+Libs: -L${libdir} -llapack
+Requires.private: blas

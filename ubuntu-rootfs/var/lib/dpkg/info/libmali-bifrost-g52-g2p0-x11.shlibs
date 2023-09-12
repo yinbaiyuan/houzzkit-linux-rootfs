@@ -1,0 +1,7 @@
+libmali 1 libmali-bifrost-g52-g2p0-x11
+libEGL 1 libmali-bifrost-g52-g2p0-x11
+libGLESv1_CM 1 libmali-bifrost-g52-g2p0-x11
+libGLESv2 2 libmali-bifrost-g52-g2p0-x11
+libMali 1 libmali-bifrost-g52-g2p0-x11
+libMaliOpenCL 1 libmali-bifrost-g52-g2p0-x11
+libgbm 1 libmali-bifrost-g52-g2p0-x11

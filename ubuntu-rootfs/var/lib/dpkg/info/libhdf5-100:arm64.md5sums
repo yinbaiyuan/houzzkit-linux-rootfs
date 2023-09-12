@@ -1,0 +1,7 @@
+928e326fe7d782a9cd7fd78a45b3a719  usr/lib/aarch64-linux-gnu/libhdf5_serial.so.100.0.1
+37b9f07c7d277a55e5d7c287313dc2eb  usr/lib/aarch64-linux-gnu/libhdf5_serial_fortran.so.100.0.1
+561edba8ae768248ec0c17a379f8e37d  usr/lib/aarch64-linux-gnu/libhdf5_serial_hl.so.100.0.0
+ded939c992ca3e538c5ac4e96416ea07  usr/lib/aarch64-linux-gnu/libhdf5_serialhl_fortran.so.100.0.0
+7329ed5e8e57ee3ee216d427dd3969d0  usr/share/doc/libhdf5-100/changelog.Debian.gz
+991c1bcaa9b3097184de712a4629f8bf  usr/share/doc/libhdf5-100/copyright
+fc4367806e96328bc4fa0835aa0f8ad9  usr/share/lintian/overrides/libhdf5-100

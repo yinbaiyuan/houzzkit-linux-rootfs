@@ -1,0 +1,53 @@
+#!/bin/sh
+
+# This file is part of netfilter-persistent
+# Copyright (C) 2014 Jonathan Wiltshire
+# 
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation, either version 3
+# of the License, or (at your option) any later version.
+
+set -e
+
+IAM=$(whoami)
+PLUGINS=/usr/share/netfilter-persistent/plugins.d
+
+if [ ${IAM} != "root" ]; then
+    echo "You must be root to use this utility"
+fi
+
+# Source configuration
+if [ -f "/etc/default/netfilter-persistent" ]; then
+    . /etc/default/netfilter-persistent
+fi
+
+run_plugins () {
+    if [ -d ${PLUGINS} ]; then
+        run-parts -v -a ${1} ${PLUGINS}
+    fi
+}
+
+case $1 in
+start|save|flush)
+    run_plugins ${1}
+    ;;
+reload|restart)
+    run_plugins start
+    ;;
+stop)
+    if [ ${FLUSH_ON_STOP} -gt 0 ]; then
+        run_plugins flush
+    else
+        echo "Automatic flush disabled; use '${0} flush'"
+        exit 1
+    fi
+    ;;
+*)
+    echo "Usage: ${0} (start|stop|restart|reload|flush|save)"
+    ;;
+esac
+
+
+exit 0
+

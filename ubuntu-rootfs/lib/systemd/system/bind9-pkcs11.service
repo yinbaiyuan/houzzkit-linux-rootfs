@@ -1,0 +1,15 @@
+[Unit]
+Description=BIND Domain Name Server with native PKCS#11
+Documentation=man:named(8)
+After=network.target
+
+[Service]
+EnvironmentFile=-/etc/default/bind9
+Environment=KRB5_KTNAME=/etc/bind/named.keytab
+
+ExecStart=/usr/sbin/named-pkcs11 -f -u bind
+ExecReload=/usr/sbin/rndc reload
+ExecStop=/usr/sbin/rndc stop
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+1e9e406ad405b33aaaffef29207439fb  sbin/dumpexfat
+3b7fc76c5539992f8a6a8eb1b5e54e71  sbin/exfatfsck
+587b5aa504d2b0d09c6b3dd40b5e5ada  sbin/exfatlabel
+307068147a5cd32726a5b9e3175d471f  sbin/mkexfatfs
+db0bdd05e251a44ec6bdc8ff944a83e4  usr/share/doc/exfat-utils/changelog.Debian.gz
+dc998a76e5fe0ebdab7c36f513f9cd52  usr/share/doc/exfat-utils/copyright
+4bacb7c6948731a0f3529865363edb5b  usr/share/man/man8/dumpexfat.8.gz
+d3d9cf1147be3e29648a7fad2b39fdc1  usr/share/man/man8/exfatfsck.8.gz
+826c58f119b7837c25b3972150d801a8  usr/share/man/man8/exfatlabel.8.gz
+91a4ad634de4624e3f778b513bc86db2  usr/share/man/man8/mkexfatfs.8.gz

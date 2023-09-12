@@ -1,0 +1,177 @@
+Template: bind9/start-as-user
+Type: string
+Default: bind
+Description: User account for running the BIND9 daemon:
+ The default is to run the BIND9 daemon (named) under the 'bind'
+ user account. To use a different account, please enter the
+ appropriate username.
+Description-cs.UTF-8: Uživatelský účet pro běh daemona BIND9:
+ Ve výchozím nastavení se daemon BINDu9 (named) spouští pod účtem uživatele „bind“. Pro použití jiného účtu zadejte jeho jméno.
+Description-da.UTF-8: Brugerkonto til kørsel af BIND9-dæmonen:
+ Standarden er at køre BIND9-dæmonen (navngivet) under brugerkontoen »bind«. For at bruge en anden konto, så indtast venligst et passende brugernavn.
+Description-de.UTF-8: Benutzerkonto, unter dessen Kennung der BIND9-Daemon laufen soll:
+ Standardmäßig wird der BIND9-Daemon (Named) unter der Kennung des Benutzers »bind« betrieben. Um ein anderes Benutzerkonto auszuwählen, geben Sie bitte den entsprechenden Benutzernamen ein.
+Description-es.UTF-8: Cuenta de usuario que ejecuta el demonio BIND9:
+ La cuenta de usuario por omisión que ejecuta el demonio BIND9 («named») es «bind». Para usar una cuenta diferente, por favor ingrese el nombre de usuario apropiado.
+Description-eu.UTF-8: BIND9 exekutatuko duen erabiltzaile kontua:
+ Lehenetsia BIND9 deabrua (named) 'bind' erabiltzaile kontuarekin exekutatzea da. Beste kontu bat erabiltzeko, idatzi dagokion erabiltzaile-izena
+Description-fi.UTF-8: Käyttäjätunnus, jolla BIND9-taustaohjelmaa ajetaan:
+ Oletuksena BIND9-taustaohjelmaa (named) ajetaan käyttäjätunnuksella ”bind”. Jos halutaan käyttää jotain muuta tunnusta, syötä se tähän.
+Description-fr.UTF-8: Identifiant pour l'exécution du démon de BIND9 :
+ Par défaut, le démon de BIND9 est lancé avec les privilèges de l'identifiant « bind ». Si vous souhaitez utiliser un autre identifiant, veuillez l'indiquer ici.
+Description-gl.UTF-8: Conta de usuario que executa o servizo de BIND9:
+ A elección por defecto é executar o servizo de BIND9 (named) baixo a conta de usuario "bind". Para empregar unha conta diferente, introduza o nome.
+Description-id.UTF-8: Akun pengguna untuk menjalankan daemon BIND9:
+ Bawaan dari daemon BIND9 adalah menjalankan dengan user akun 'bind'. Untuk menggunakan akun berbeda, silakan masukkan nama pengguna yang sesuai.
+Description-it.UTF-8: Account utente con cui eseguire il demone BIND9:
+ L'opzione predefinita prevede l'esecuzione del demone BIND9 (named) utilizzando l'utente 'bind'. Se si desidera utilizzare un differente account utente, inserire il nome corrispondente.
+Description-ja.UTF-8: BIND9 デーモンの動作に使うユーザアカウント:
+ デフォルトでは BIND9 デーモン (named) は「bind」ユーザアカウントで動作します。異なるアカウントを使いたい場合は、適切なユーザ名を入力してください。
+Description-ko.UTF-8: BIND9 데몬을 실행하기 위한 사용자 계정:
+ 기본값은 '바인드' 사용자 계정에서 BIND9 데몬(지정된 이름)을 실행합니다. 다른 계정을 사용하려면 해당 사용자 이름을 입력하세요.
+Description-nb.UTF-8: Brukerkonto for å kjøre BIND9-daemonen:
+ Standard er å kjøre BIND8-daemonen (named) under brukerkontoen «bind». Skriv inn et passende navn for å bruke en annen konto.
+Description-nl.UTF-8: Gebruikersaccount waaronder de BIND9 achtergronddienst dient te draaien:
+ Standaard wordt 'named', de BIND9-achtergronddienst, uitgevoerd onder de 'bind' gebruikersaccount. Als u een andere account wilt gebruiken kunt hier de geschikte gebruikersnaam invullen.
+Description-no.UTF-8: Brukerkonto for å kjøre BIND9-daemonen:
+ Standard er å kjøre BIND8-daemonen (named) under brukerkontoen «bind». Skriv inn et passende navn for å bruke en annen konto.
+Description-pl.UTF-8: Konto użytkownika, jako który powinien działać BIND9:
+ Domyślnie demon BIND9 (named) działa jako użytkownik 'bind'. Aby użyć innego konta podaj inną nazwę użytkownika.
+Description-pt.UTF-8: Conta de utilizador para correr o deamon BIND9:
+ A pré-definição é correr o deamon BIND9 (named) sob a conta de utilizador 'bind'. Para usar uma conta diferente, por favor indique o nome de utilizador apropriado.
+Description-pt_BR.UTF-8: Conta de usuário para execução do daemon do BIND9:
+ O padrão é executar o daemon do BIND9 (named) com a conta de usuário 'bind'. Para usar uma conta diferente, por favor informe o nome do usuário.
+Description-ru.UTF-8: Учётная запись для запуска службы BIND9:
+ По умолчанию, служба BIND9 (файл named) запускается с правами учётной записи 'bind'. Если вы хотите использовать другую учётную запись, то введите это имя здесь.
+Description-sk.UTF-8: Používateľský účet démona BIND9:
+ Štandardne sa démon BIND9 (named) spúšťa s používateľským účtom „bind”. Ak chcete použiť iný účet, prosím zadajte príslušný názov účtu.
+Description-sr.UTF-8: Кориснички налог за покретање BIND9 процеса у позадини:
+ Подразумијевано је да се BIND9 процес у позадини (Named) покреће под 'bind'корисничким налогом. Да бисте користили другачији налог, унесите адекватно корисничко име.
+Description-sr@latin.UTF-8: Korisnički nalog za pokretanje BIND9 procesa u pozadini:
+ Podrazumijevano je da se BIND9 proces u pozadini (Named) pokreće pod 'bind'korisničkim nalogom. Da biste koristili drugačiji nalog, unesite adekvatno korisničko ime.
+Description-sv.UTF-8: Användarkonto att köra BIND9-demonen under:
+ Standardvalet är att köra BIND9-demonen (named) under användarkontot 'bind'. För att använda ett annat konto, var vänlig ange användarnamnet.
+Description-tr.UTF-8: BIND9 bekletici programının (named) kullanacağı kullanıcı hesabı:
+ Öntanımlı olarak BIND9 bekletici (daemon) programı 'bind' kullanıcı hesabıyla çalışır. Farklı bir hesap kullanmak için kullanmak istediğiniz hesabın adını girin.
+Description-vi.UTF-8: Tài khoản người dùng để chạy trình nền BIND9:
+ Mặc định là chạy trình nền BIND9 (đặt tên) dưới tài khoản người dùng « bind ». Để sử dụng tài khoản khác, hãy nhập tên người dùng thích hợp.
+Description-zh_CN.UTF-8: 运行 BIND9 服务的用户账号:
+ 缺省使用 'bind' 用户来运行 BIND9 服务(named)。 想使用其他的账号, 请输入合适的用户名。
+
+Template: bind9/different-configuration-file
+Type: string
+Description: Other startup options for named:
+ Please provide any additional options (other than username) that should
+ be passed to the BIND9 daemon (named) on startup.
+Description-cs.UTF-8: Další spouštěcí parametry pro named:
+ Zadejte prosím případné další parametry (mimo uživatelského účtu), které se mají předat daemonu BINDu9 (named) při každém spuštění.
+Description-da.UTF-8: Andre opstartsindstillinger for navngivet:
+ Angiv venligst eventuelle yderligere indstillinger (udover brugernavnet) som skal videresendes til BIND9-dæmonen (navngivet) ved opstart.
+Description-de.UTF-8: Weitere Optionen für den Start des Named:
+ Bitte geben Sie hier die zusätzlichen Optionen (außer dem Benutzernamen) ein, die dem Bind9-Daemon (Named) beim Starten übergeben werden sollen.
+Description-es.UTF-8: Otras opciones de inicio para «named»:
+ Ingrese cualquier opción adicional (además del nombre de usuario) que debiera pasarse como parámetro al demonio BIND9 («named») al inicio del sistema.
+Description-eu.UTF-8: Beste abio aukera batzuek named-rentzat:
+ Mesedez zehaztu BIND9 deabruari abioan pasa behar zaizkion beste aukera gehigarriak (erabiltzaile-izenaz beste).
+Description-fi.UTF-8: Ohjelman named muut käynnistysvalitsimet:
+ Anna mahdolliset muut valitsimet (muut kuin käyttäjätunnus), jotka BIND9-taustaohjelmalle (named) tulisi antaa käynnistyksessä.
+Description-fr.UTF-8: Autres options à transmettre pour « named » :
+ Veuillez indiquer toute option supplémentaire (autre que l'identifiant) qui doit être transmise au démarrage du démon de BIND9 (« named »).
+Description-gl.UTF-8: Outras opcións de inicio para named:
+ Forneza as opcións adicionais (que non sexan o nome de usuario) que se deban pasar ao servizo de BIND9 (named) no inicio.
+Description-id.UTF-8: Opsi lain startup untuk named:
+ Harap menyediakan opsi tambahan (selain nama pengguna) yang digunakan daemon BIND9 untuk startup
+Description-it.UTF-8: Altre opzioni di avvio per named:
+ Inserire qualsiasi opzione addizionale (differente dal nome utente) che dovrebbe essere inviata al demone BIND9 (named) durante l'avvio.
+Description-ja.UTF-8: 起動時に named に指定するオプション:
+ BIND9 デーモン (named) の起動時に指定したい (ユーザ名以外の) 追加オプションを入力してください。
+Description-ko.UTF-8: 지명된 다른 시작 옵션:
+ BIND9 데몬(지정된 이름)이 실행으로 전달되기 위해서 추가옵션(사용자 이름 이외)을 입력하세요.
+Description-nb.UTF-8: Andre oppstartsvalg for named:
+ Skriv inn flere valg (annet enn brukernavn) som skal sendes over til BIND9-daemonen (named) ved oppstart.
+Description-nl.UTF-8: Andere opstartopties voor 'named':
+ Welke aanvullende opties (anders dan de gebruikersnaam) wilt u bij het opstarten meegeven aan 'named', de BIND9 achtergronddienst?
+Description-no.UTF-8: Andre oppstartsvalg for named:
+ Skriv inn flere valg (annet enn brukernavn) som skal sendes over til BIND9-daemonen (named) ved oppstart.
+Description-pl.UTF-8: Inne opcje startowe dla named:
+ Proszę podać dodatkowe opcje (inne niż nazwa użytkownika), które powinny zostać podane demonowi BIND9 (named) przy starcie.
+Description-pt.UTF-8: Outras opções de arranque para o named:
+ Por favor forneça quaisquer opções adicionais (além do nome de utilizador) que deverão ser enviadas ao deamon BIND9 (named) durante o arranque.
+Description-pt_BR.UTF-8: Outras opções de inicialização para o named:
+ Por favor, forneça outras opções adicionais (além de nome de usuário), que devam ser passadas ao daemon do BIND9 (named) na inicialização.
+Description-ru.UTF-8: Другие параметры запуска named:
+ Укажите любые дополнительные параметры (кроме имени учётной записи), которые нужно передать службе BIND9 (файлу named) при запуске.
+Description-sk.UTF-8: Ďalšie spúšťacie voľby pre named:
+ Zadajte ďalšie voľby (okrem používateľského mena), ktoré sa majú odovzdať démonovi BIND9 (named) pri spustení.
+Description-sr.UTF-8: Друге опције приликом покретања за (Named):
+ Молимо вас обезбједите додатне опције (осим корисничког имена) који би требалибити прослијеђени BIND9 процесу у позадини (Named) приликом покретања.
+Description-sr@latin.UTF-8: Druge opcije prilikom pokretanja za (Named):
+ Molimo vas obezbjedite dodatne opcije (osim korisničkog imena) koji bi trebalibiti proslijeđeni BIND9 procesu u pozadini (Named) prilikom pokretanja.
+Description-sv.UTF-8: Övriga uppstartsval för named:
+ Var vänlig ange eventuella ytterligare val (förutom användarnamn) som ska skickas till BIND9-demonen (named) vid uppstart.
+Description-tr.UTF-8: 'named'in kullanacağı diğer başlatma seçenekleri:
+ Lütfen BIND9 bekletici programına (named) geçilmesini istediğiniz, kullanıcı adı dışındaki ek seçenekleri yazın.
+Description-vi.UTF-8: Tùy chọn khởi chạy khác cần đặt tên:
+ Hãy nhập vào đây bất kỳ tùy chọn bổ sung (khác với tên người dùng) nên gửi cho trình nền BIND9 vào lúc khởi chạy.
+Description-zh_CN.UTF-8: named 的其他启动选项:
+ 请提供需要传给 BIND9 服务(named)的启动选项(用户名除外)。
+
+Template: bind9/run-resolvconf
+Type: boolean
+Default: false
+Description: Should resolv.conf settings be overridden?
+ Please choose whether the resolver should be forced to use the
+ local BIND9 daemon (named) rather than what the current connection
+ recommends, when this machine moves around.
+Description-cs.UTF-8: Má se přepsat nastavení v resolv.conf?
+ Rozhodněte se, zda se má přepsat nastavení resolveru tak, aby vždy používal lokální daemon BINDu9 (named) namísto serveru, který doporučí aktuální připojení.
+Description-da.UTF-8: Skal opsætningen af resolv.conf overskrives?
+ Vælg venligst hvorvidt opløseren skal tvinges til at bruge den lokale BIND9-dæmon (navngivet), frem for hvad den aktuelle forbindelse anbefaler, når denne maskine flytter rundt.
+Description-de.UTF-8: Sollen die Einstellungen in resolv.conf ignoriert werden?
+ Bitte wählen Sie aus, ob der Namensauflöser (Resolver) dazu gezwungen werden soll, den lokalen BIND9-Daemon (Named) zu verwenden, statt den aktuellen Verbindungsempfehlungen zu folgen, wenn diese Maschine bewegt wird.
+Description-es.UTF-8: ¿Debería sobreescribirse el archivo «resolv.conf»?
+ Indique si se debería forzar al cliente a utilizar el demonio BIND9 («named») local en lugar de lo que la conexión actual recomiende, cuando este equipo este en movimiento.
+Description-eu.UTF-8: resolv.conf ezarpenak gainidatzi behar al dira?
+ Mesedez hautatu ebazlea nola behartu behar den BIND9 deabru kopia lokala erabiltzeko ekipo hau mugitzen ari denean konexioak gomendatzen dionaren ordez.
+Description-fi.UTF-8: Tulisiko tiedoston resolv.conf asetukset jättää huomioitta?
+ Valitse tulisiko selvittäjä pakottaa käyttämään paikallista BIND9-taustaohjelmaa (named) sen sijaan mitä nykyinen yhteys suosittelee, kun konetta siirrellään eri paikkoihin.
+Description-fr.UTF-8: Faut-il écraser les paramètres de resolv.conf ?
+ Veuillez choisir si la résolution de noms doit utiliser le démon BIND9 local (« named ») plutôt que les paramètres recommandés pour la connexion actuelle, lorsque cette machine est déplacée.
+Description-gl.UTF-8: ¿Quere substituír a configuración de resolv.conf?
+ Indique se quere forzar o resolvedor a que empregue o servizo de BIND9 local (named) no canto do que recomenda a conexión actual, cando esta máquina estea en movemento.
+Description-id.UTF-8: haruskah resolv.conf ditimpa?
+ Silakan tentukan resolver mana yang akan digunakan untuk daemon lokal BIND9 (named) dari koneksi sekarang yang digunakan, ketika mesin ini berjalan
+Description-it.UTF-8: Si desidera non tener conto delle impostazioni in resolv.conf?
+ Scegliere se si desidera forzare la risoluzione di tutte le query DNS con il demone BIND9 locale (named) non utilizzando i server raccomandati dalla connessione attiva.
+Description-ja.UTF-8: resolv.conf の設定を上書きしますか?
+ このマシンを移動した際、リゾルバがローカルの BIND9 デーモン (named) を使うようにするか、現在の接続先で推奨されるネームサーバを使うようにするかを選んでください。
+Description-ko.UTF-8: resolv.conf 설정은 재정의 되어야하는가?
+ 이 기계가 근처로 이동될 때 해결자는 현재의 연결을 권장하는 것보다 로컬 BIND9 데몬(지정된 이름)을 사용하도록 강요해야하는지 여부를 선택하세요.
+Description-nb.UTF-8: Skal innstillingene i resolv.conf oveerstyres?
+ Velg om adresseløseren skal tvinges til å bruke den lokale BIND9-daemonen (named) i stedet for det den gjeldende tilkoblingen anbefaler, når denne maskinen flyttes omkring.
+Description-nl.UTF-8: Wilt u dat de 'resolv.conf' instellingen omzeild worden?
+ Wilt u afdwingen dat de 'resolver' gebruik maakt van de lokale BIND9 achtergronddienst (named), in plaats van de aanbevelingen van de huidige connectie. Bijvoorbeeld, wanneer deze computer veel verplaatst wordt.
+Description-no.UTF-8: Skal innstillingene i resolv.conf oveerstyres?
+ Velg om adresseløseren skal tvinges til å bruke den lokale BIND9-daemonen (named) i stedet for det den gjeldende tilkoblingen anbefaler, når denne maskinen flyttes omkring.
+Description-pl.UTF-8: Czy ustawienia resolv.conf mają zostać nadpisane?
+ Proszę wybrać czy do rozwiązywania nazw powinna być używana lokalna usługa BIND9 (named), kiedy maszyna zmienia miejsce, czy też powinien korzystać z zalecanych ustawień aktualnego połączenia.
+Description-pt.UTF-8: Devem as configurações de resolv.conf ser substituidas?
+ Por favor escolha se a resolução de nomes deverá ser forçada a usar o deamon local BIND9 (named) em vez do que a corrente ligação recomenda, quando esta máquina está ligada.
+Description-pt_BR.UTF-8: As configurações do resolv.conf devem ser sobrescritas?
+ Por favor, escolha se o resolvedor de nomes deve ser forçado a usar o daemon do BIND9 local (named) em vez daquele que a conexão atual recomendar, quando esta máquina for movida.
+Description-ru.UTF-8: Переписать настройки resolv.conf?
+ Укажите, хотите ли вы, чтобы определитель имён машины использовал локальную службу BIND9 (named), а не настройки имеющегося подключения.
+Description-sk.UTF-8: Má sa nastaviť priorita pred resolv.conf?
+ Zvoľte, či má sa má vynútiť, aby prekladač adries používal lokálneho démona BIND9 (named) namiesto toho, čo odporúča aktuálne pripojenie, keď sa umiestnenie tohto počítača mení.
+Description-sr.UTF-8: Желите ли поништити постојећа resolv.conf подешавања?
+ Одаберите желите ли да аутоматски помагач (Resolver) буде присиљен користити локални BIND9 процес у позадини (Named) умјесто препорука тренутне мреже, када ова машина буде помјерана.
+Description-sr@latin.UTF-8: Želite li poništiti postojeća resolv.conf podešavanja?
+ Odaberite želite li da automatski pomagač (Resolver) bude prisiljen koristitilokalni BIND9 proces u pozadini umjesto preporuka trenutne mreže, kada ovamašina bude pomjerana.
+Description-sv.UTF-8: Ska resolv.conf-inställningar hoppas över?
+ Var vänlig välj huruvida uppslagaren ska tvingas använda den lokala BIND9-demonen (named) snarare än vad den aktuella uppkopplingen rekommenderar när den här maskinen flyttar runt.
+Description-tr.UTF-8: 'resolv.conf' ayarları ezilmeli mi (override)?
+ Lütfen bu makine gezerken; çözümleyicinin o anda kullanılan bağlantının önerdiği sunucu yerine yerel BIND9 bekletici programını (named) kullanmaya zorlanması gerekip gerekmediğini seçin.
+Description-vi.UTF-8: Co nên ghi đè lên thiết lập « resolv.conf » không?
+ Hãy chọn có nên ép buộc trình giải quyết sử dụng trình nền BIND9 cục bộ (đặt tên) hơn là kết nối hiện thời đề nghị gì khi máy này ở nơi khác.
+Description-zh_CN.UTF-8: 是否覆盖 resolv.conf 的设置?
+ 请选择是否强制使用本地 BIND9 服务(named)来做域名解析, 而不是使用当前连接所推荐的域名解析服务器, 特别是当机器需要移动时。

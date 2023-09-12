@@ -1,0 +1,4 @@
+38d2b897353eb931c74c7611cb16de42  sbin/mount.exfat-fuse
+586ac44ab75133f036991341a03cfe1c  usr/share/doc/exfat-fuse/changelog.Debian.gz
+dc998a76e5fe0ebdab7c36f513f9cd52  usr/share/doc/exfat-fuse/copyright
+206ae8a17da1cf219f948a929440cae2  usr/share/man/man8/mount.exfat-fuse.8.gz
